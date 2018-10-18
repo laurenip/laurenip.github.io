@@ -9,10 +9,22 @@ body {
 
 p, ul, ol {
   font-weight: 300;
-  line-height: 1.75; }
+  line-height: 1.75;
+  font-size: 16px;
+  padding-top: 20px;
+  margin-bottom: 0px;}
+
+li { padding-bottom: 10px; }
+
+hr {
+  width: 225px;
+  padding-bottom: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 a {
-  color: #8892ED; }
+  color: #222222; }
   a.active, a:active, a:focus, a:hover {
     color: #8892ED; }
 
@@ -22,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   text-transform: none; }
 
@@ -39,9 +51,9 @@ section {
     text-transform: none;
     font-family: 'Roboto', Helvetica, Arial, sans-serif; }
 
-@media (min-width: 768px) {
-  section {
-    padding: 100px 0; } }
+    @media (min-width: 768px) {
+      section {
+        padding: 75px 0; } }
 
 ::-moz-selection {
   background: #8892ED;
@@ -75,6 +87,7 @@ body {
   #mainNav .navbar-brand {
     color: #8892ED;
     font-weight: 500;
+    letter-spacing: 1px;
     font-family: 'Roboto', Helvetica, Arial, cursive; }
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #8892ED; }
@@ -89,7 +102,7 @@ body {
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
       color: #8892ED; }
 
-@media (min-width: 992px) {
+@media (min-width: 500px) {
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -99,7 +112,7 @@ body {
     border: none;
     background-color: transparent; }
     #mainNav .navbar-brand {
-      font-size: 1.75em;
+      font-size: 1.25em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s; }
@@ -117,7 +130,6 @@ body {
 header.masthead {
   text-align: center;
   color: #222222;
-  background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -125,41 +137,64 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+
+
+@media (max-width: 768px) {
   header.masthead .intro-text {
-    text-align: left;
-    padding-top: 150px;
-    padding-bottom: 100px; }
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 10px; }
     header.masthead .intro-text .intro-lead-in {
-      font-size: 16.5px;
+      font-size: 16px;
       line-height: 130%;
-      margin-bottom: 40px;
-      font-weight: 300;
-      font-family: 'Roboto', Helvetica, Arial, sans-serif; }
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      padding-left: 25%;
+      padding-right: 25%; }
     header.masthead .intro-text .intro-heading {
       font-size: 50px;
       font-weight: 500;
       line-height: 50px;
       margin-bottom: 25px;
       font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      text-transform: none; } }
+
+
+
+  header.masthead .intro-text {
+    padding-top: 225px;
+    padding-bottom: 10px; }
+    header.masthead .intro-text .intro-lead-in {
+      font-size: 24px;
+      color: grey;
+      letter-spacing: 0.5px;
+      line-height: 150%;
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    }
+    header.masthead .intro-text .intro-lead-in--home {
+      font-size: 22px;
+      color: grey;
+      letter-spacing: 0.25px;
+      line-height: 150%;
+      margin-bottom: 25px;
+      font-weight: 300;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      padding-left: 22%;
+      padding-right: 22%;
+    }
+    header.masthead .intro-text .intro-heading {
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 100%;
+      margin-bottom: 20px;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
       text-transform: none; }
 
-@media (min-width: 768px) {
-  header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px; }
-    header.masthead .intro-text .intro-lead-in {
-      font-size: 30px;
-      line-height: 130%;
-      margin-bottom: 40px;
-      font-weight: 300;
-      font-family: 'Roboto', Helvetica, Arial, sans-serif; }
-    header.masthead .intro-text .intro-heading {
-      font-size: 75px;
-      font-weight: 400;
-      line-height: 75px;
-      margin-bottom: 25px;
-      font-family: 'Roboto', Helvetica, Arial, sans-serif;
-      text-transform: none; } }
+
 
 .service-heading {
   margin: 15px 0;
@@ -170,8 +205,8 @@ header.masthead {
   margin: 0 0 15px; }
   #portfolio .portfolio-item .portfolio-link {
     position: relative;
-    display: block;
-    max-width: 400px;
+    display: inline-block;
+    max-width: 1110px;
     margin: 0 auto;
     cursor: pointer; }
     #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -200,19 +235,24 @@ header.masthead {
         #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
           margin: 0; }
   #portfolio .portfolio-item .portfolio-caption {
-    max-width: 400px;
+    max-width: 1110px;
     margin: 0 auto;
     padding: 25px;
-    text-align: center;
+    text-align: left;
     background-color: white; }
-    #portfolio .portfolio-item .portfolio-caption h4 {
+    #portfolio .portfolio-item .portfolio-caption .description--cap {
+      color: grey;
       margin: 0;
-      padding: 5px;
+      font-weight: 400;
+      padding-bottom: 0px;
+      padding-top: 3px;
       text-transform: none; }
-    #portfolio .portfolio-item .portfolio-caption p {
-      font-size: 16px;
+    #portfolio .portfolio-item .portfolio-caption .tags--cap {
+      font-size: 14px;
       margin: 0;
-      font-family: 'Roboto', Helvetica, Arial, sans-serif; }
+      font-family: monospace;
+      font-weight: 300;
+      color: #8892ED; }
 
 #portfolio * {
   z-index: 2; }
@@ -288,6 +328,8 @@ header.masthead {
 .portfolio-modal .modal-backdrop {
   display: none;
   opacity: 0; }
+
+/*
 
 .timeline {
   position: relative;
@@ -464,30 +506,18 @@ section#contact {
   section#contact :-moz-placeholder {
     font-weight: 700;
     color: #eeeeee;
-    /* Firefox 18- */
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-  section#contact ::-moz-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    /* Firefox 19+ */
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-  section#contact :-ms-input-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    text-transform: uppercase; }
-  section#contact .text-danger {
-    color: #e74c3c; }
+
+    */
+
 
 footer {
-  padding: 25px 0;
-  text-align: center; }
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f8f9fa}
   footer span.copyright {
-    font-weight: lighter;
+    font-weight: 400;
     font-size: 90%;
-    line-height: 40px;
+    color: grey;
     text-transform: none;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     text-transform: none; }
@@ -500,7 +530,7 @@ footer {
     text-transform: uppercase; }
 
 ul.social-buttons {
-  margin-bottom: 0; }
+  margin-bottom: 0px; }
   ul.social-buttons li a {
     text-align:center;
     font-size: 25px;
@@ -511,12 +541,12 @@ ul.social-buttons {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    color: white;
+    color: #222222;
     border-radius: 100%;
     outline: none;
-    background-color: #222222; }
+  }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-      background-color: #8892ED; }
+      color: #8892ED; }
 
 .text-primary {
   color: #8892ED !important; }
@@ -609,3 +639,158 @@ ul.social-buttons {
     border-color: #8892ED;
     color: #222222;
   }
+
+
+  /* New code for portfolio section */
+  .clearfix {
+  overflow: auto;
+  zoom: 1;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+/* Thumbnail and caption */
+.thumbnail {
+  width: 60%;
+  height: 20%;
+  float: left;
+}
+
+.caption {
+  width: 40%;
+  float: right;
+  padding: 10% 5%;
+}
+
+@media screen and (max-width: 800px) {
+
+/* make the caption below the image */
+  .thumbnail {
+    width: 100%;
+    display: block;
+  }
+
+  .caption {
+    width: 100%;
+    padding: 8% 5%;
+  }
+
+}
+
+/*Custom text styles*/
+.project-title {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.tags {
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: 300;
+  color: #8892ED;
+  letter-spacing: 0px;
+}
+
+.section-heading {
+  font-size: 14px;
+  font-weight: 500;
+  font-variant: small-caps;
+  letter-spacing: 1.5px;
+  margin-bottom: 0px;
+  padding-top: 60px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  padding-top: 30px;
+}
+
+/*Narrower container for body of website */
+
+.container-narrow {
+  padding: 0px 28%;
+}
+
+@media (max-width: 767px) {
+  .container-narrow {
+    padding: 0px 15%;
+  }
+}
+
+/* The hero image */
+.hero-img {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.img-in-body {
+  padding-top: 45px;
+  padding-bottom: 25px;
+  align: center;
+}
+
+/*Expand section*/
+input {
+  display: none;
+  visibility: hidden;
+}
+label {
+  display: block;
+  text-align: left;
+  color: #666;
+}
+label:hover {
+  color: #8892ED;
+}
+label::before {
+
+  font-size: 14px;
+  font-weight: 400;
+  font-variant: small-caps;
+  letter-spacing: 1.5px;
+  margin-bottom: 0px;
+  content: "+ SNEAK PEEKS";
+  vertical-align: text-center;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: none;
+}
+#expand {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.75s ease-in;
+  color: #222222;
+}
+section {
+  padding: 0 20px;
+}
+#toggle:checked ~ #expand {
+  height: auto;
+  max-height:5000px;
+}
+#toggle:checked ~ label::before {
+  content: "- SNEAK PEEKS";
+}
