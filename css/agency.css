@@ -771,7 +771,7 @@ label::before {
   font-variant: small-caps;
   letter-spacing: 1.5px;
   margin-bottom: 0px;
-  content: "+ SNEAK PEEKS";
+  content: "+ MORE";
   vertical-align: text-center;
   width: 20px;
   height: 20px;
@@ -792,5 +792,5 @@ section {
   max-height:5000px;
 }
 #toggle:checked ~ label::before {
-  content: "- SNEAK PEEKS";
+  content: "- MORE";
 }
