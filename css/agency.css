@@ -237,9 +237,9 @@ header.masthead {
   #portfolio .portfolio-item .portfolio-caption {
     max-width: 1110px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 25px 25px 25px 5px;
     text-align: left;
-    background-color: white; }
+    background-color: ; }
     #portfolio .portfolio-item .portfolio-caption .description--cap {
       color: grey;
       margin: 0;
