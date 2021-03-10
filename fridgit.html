@@ -2,22 +2,24 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Lauren Ip</title>
+  <title>Fridgit</title>
 
-  <!-- Bootstrap core CSS -->
+  <!-- Template Fonts -->
+  <link href="http://fontlibrary.org/face/hk-grotesk" rel="stylesheet" media="screen" type="text/css"/>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/08b9ba6fd9.js" crossorigin="anonymous"></script>
+
+  <!-- Vendor CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/zoom-vanilla/zoom.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/agency.css" rel="stylesheet">
 
 </head>
 
@@ -25,256 +27,350 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html">LAUREN IP</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fa fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Lauren Ip - Resume.pdf" target="_blank">Resume</a>
-          </li>
-          <!--
-          <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-      -->
-    </ul>
-  </div>
-</div>
-</nav>
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">LAUREN IP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu&nbsp;
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#portfolio">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Lauren Ip - Resume.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<!-- Header -->
-<header class="masthead">
-  <div class="container-narrow">
-    <div class="intro-text">
-      <div class="project-title">Fridgit &mdash;</div>
-      <div class="project-tagline">a smart inventory tracking device</div>
-      <div class="project-tags">product design &ensp;/&ensp; web design &ensp;/&ensp; brand development</div>
+  <nav class="toc">
+  	<ul>
+  		<li><a href="#overview">Overview</a></li>
+        <ul>
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#solution">Solution</a></li>
+  			</ul>
+  		<li><a href="#discovery">I. Discovery</a></li>
+  			<ul>
+          <li><a href="#survey-results">UX Survey</a></li>
+          <li><a href="#personas">User Personas</a></li>
+          <li><a href="#reqs">Requirements</a></li>
+  			</ul>
+      <li><a href="#design">II. Design</a></li>
+        <ul>
+          <li><a href="#sitemap">Sitemap</a></li>
+          <li><a href="#hifi">Wireframes</a></li>
+        </ul>
+      <li><a href="#demoday">Demo Day</a></li>
+      <li><a href="#bonus">Bonus Content</a></li>
+        <ul>
+          <li><a href="#logo">Logo</a></li>
+          <li><a href="#website">Landing Page</a></li>
+        </ul>
+  	</ul>
+    <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+      <path stroke="#5746EC" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="miter" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+    </svg>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container-narrow">
+      <div class="project-header">
+        <h1>Fridgit</h1>
+        <h4>A smart inventory tracking device that changes the way you manage food in your fridge</h4>
+      </div>
     </div>
-  </div>
-</header>
-
-<div class="container-narrow">
-  <p style="padding-bottom:60px">In the summer of 2017 I joined a team entering the University of Toronto’s Hatchery Entrepreneurship Program, a 4-month long accelerator and pitch competition that helps students bring their startup ideas to life. I became a co-founder of “Fridgit”--a smart inventory tracking device that changes the way you manage the food in your fridge.</p>
-</div>
-<img class="hero-img" src="img/portfolio/fridgit/overview.jpg" alt="image overview">
-<div class="container-narrow">
-  <h1 class="section-heading">THE CHALLENGE</h1>
-  <h1 class="section-title">Changing the way you manage food</h1>
-  <p>For students, working professionals, and parents who must often balance a multitude of responsibilities and commitments, keeping track of food can be tough. Meal planning requires the time and effort that many people just don’t have--things like knowing what’s in your fridge <em>now</em>, <em>what</em> groceries you need to buy and <em>when</em> to buy them are easily overlooked.</p>
-  <p>Enter Fridgit, a retrofitting Internet of Things (IOT) device that turns your typical fridge into one that is smart and connected. Using machine learning based image recognition software, Fridgit tracks the movement of food in and out of your fridge, and uses this information to deliver expiration date reminders, grocery suggestions and recipe recommendations through a mobile app.</p>
-  <img class="img-fluid img-in-body" src="img/portfolio/fridgit/challenge.jpg" alt="how fridgit works">
-  <p>As cohorts of the Hatchery program, we were expected to deliver a working prototype and final product pitch within a 4-month timeframe. We knew that ensuring a good user experience would be crucial to Fridgit’s success, and would likely be the determining factor for consumers deciding whether or not to adopt the technology. Our goal was to create a product that could both enhance and simplify people’s lifestyles by helping users shop smarter, eat healthier, and reduce household food waste.</p>
-  <h1 class="section-heading">MY ROLE</h1>
-  <h1 class="section-title">The wearer of multiple hats</h1>
-  <p>As the sole UI/UX designer on the team I was primarily responsible for designing the interface of our mobile app. I worked alongside 2 developers and 1 project manager to bring our ideas from paper sketches to a demo-ready prototype.</p>
-  <p style="padding-bottom:60px">My role later transformed into something along the lines of a growth hacker, where I worked with our marketing strategist to solidify brand and product vision. I helped to also build a cohesive brand across all our marketing materials through the design of our logo, pitch deck and consumer facing website.</p>
-</div>
-
-<img class="hero-img" src="img/portfolio/fridgit/approach.jpg" alt="image">
-
-<div class="container-narrow">
-  <h1 class="section-heading">THE APPROACH</h1>
-  <h1 class="section-title">Lean, agile, startup UX</h1>
-  <h1 class="section-subtitle">I. Discovery: User Research & Requirements</h1>
-  <p>When I first joined the team there was no real design direction. We had the hardware and the software, but nothing our users could actually interface with! While the capabilities of our image recognition system were great, learning what actual value we could bring to users was a challenge on its own.</p>
-  <p>While our team had already done some market research prior, I pushed for us to release a more focused UX survey in order to get a better understanding of 1) what exactly users wanted and 2) what they actually needed. Through the survey we were able to identify users’ current pain points in the food management process, and understand the context in which users would use the product in their daily workflow.</p>
-<p>Our target users were those who had experience using mobile applications, had a traditional refridgerator (non-smart fridge), and did their own grocery shopping. We were curious to know:</p>
-  <ul>
-    <li>How often do users shop for groceries?</li>
-    <li>How many of our users live on their own, versus with others? How many people would usually be sharing a single fridge?</li>
-    <li>Do most users shop for just themselves, or their entire household? Do they share this responsibility with others?</li>
-    <li>What are the biggest paint points in users’ current food management workflow? </li>
-    <li>What kind of features would users find most useful to have? What information would users want displayed, and how?</li>
-    <li>What are users’ tolerance levels with regards to the accuracy and robustness of the technology?</li>
-  </ul>
-  <p>We had 288 responses, half of which came from users aged 19-25 and 40% of which were users aged 26-65. About half of respondents were single, the other half married or in a relationship.</p>
-  <p>Key Insights:</p>
-  <ul>
-    <li>Majority of users go grocery shopping at least once every week.</li>
-    <li>Over 90% of users live with at least one other person; less than 10% live alone.</li>
-    <li>More than half of users shop for themselves only, rather than the entire household.</li>
-    <li>More than half of users work over 40 hours per week.</li>
-    <li>The first thing users want to see upon opening the app is 1) everything that’s in their fridge, and 2) food expiry or restocking notifications.</li>
-    <li>The aspects of managing food inventory that users find most difficult include keeping track of expiry dates, estimating the quantity of food to buy, and having everything you need for a recipe.</li>
-  </ul>
-  <img class="img-fluid img-in-body" src="img/portfolio/fridgit/survey.jpg" alt="survey responses">
-  <p>To supplement the survey, I interviewed a few additional users to dig deeper into areas of the workflow that seemed to be of most concern. I wanted to know what a typical day looks like for a student versus working adult.</p>
-  <p><em>How does each type of user typically fit grocery shopping and/or meal prep into their daily workflows? Is grocery shopping usually scheduled as a task, or done on the fly?</em></p>
-  <p><em>How do users typically remember what they need to buy, or what’s currently in their fridge? Do they try to prepare a grocery list before hand? What happens if they forget?</em></p>
-  <p style="padding-bottom:60px">Using insights garnered from both survey and user interviews, I was able to craft a set of personas representing each one of our user groups. I mapped out several use cases and scenarios to help guide us in determining functional requirements for what we decided would be a mobile app.</p>
-</div>
-<img class="hero-img" src="img/portfolio/fridgit/personas.jpg" alt="personas">
-<div class="container-narrow">
-  <br>
-  <p>Using the survey we sent out, we were also able to get a sense of what sort of features our users thought were most important. In order of most to least important these features were:</p>
-  <ol>
-    <li>Reminders about food going bad</li>
-    <li>Reminders about food low on stock</li>
-    <li>Storage advice for individual food items</li>
-    <li>Suggestions for grocery restocking</li>
-    <li>Built-in shopping list</li>
-  </ol>
-  <p>And the less important nice-to-haves:</p>
-  <ol start="6">
-    <li>Nutritional facts for individual food items</li>
-    <li>Overall nutrition summary</li>
-    <li>Activity log detailing action history</li>
-    <li>Recipe suggestions</li>
-    <li>Semi- or fully- automated grocery delivery</li>
-  </ol>
-  <p>Features 1-5 were by far the highest priority for our users. I sat down with our developers to tease out the technical limitations of our system and understand the design constraints I would have to work with. Things like,</p>
-  <p><em>What happens if Fridgit doesn’t recognize an item? What happens if Fridgit makes a mistake? How can users correct it?</em></p>
-  <p><em>How good is the quality of photos taken by Fridgit? What kind of information can Fridgit pull from an image? Colour? Quantity? Brand?</em></p>
-  <p><em>What kind of user input data can we store?</em></p>
-  <p>Taking all this into consideration, we eventually agreed on a solid set of requirements and functionalities that would be included in our minimum viable product (MVP).</p>
-  <h1 class="section-subtitle">II. Design:  Ideation, Wireframing & Prototyping</h1>
-  <p>Before doing any actual sketching, I usually like to get a sense of the general hierarchical structure I would like the application to follow. So with fridgit, I started off by building a sitemap of sorts off the requirements we had gathered previously, planning out the information architecture and navigational structure.</p>
-  <img class="img-fluid img-in-body" src="img/portfolio/fridgit/sitemap.jpg" alt="sitemap">
-  <p>When it came to actually designing each screen, I bounced ideas off my teammates and looked into existing products with similar task flows for inspiration. Together we explored a variety of design options until chicken scratches eventually turned into low fidelity wireframes. Though we were crunched for time, I also met with representative users whenever I could to get feedback on the general layout and functional elements of the user interface. I made sure to validate some of the design decisions I had made with regards to specific user task flows (such as viewing food items, manual input/correction of items, creating a shopping list) to ensure we were heading in the right direction.</p>
-  <p>I would’ve loved to spend more time in the ideation and low-fidelity prototyping phase—there were many, many directions we could’ve gone in terms of the layout—but we didn’t exactly have the time (a familiar problem to all, I’m sure). With the pressure of our final pitch deadline coming up, I had to quickly transition into polishing up higher fidelity mocks that could be shown as a prototype on Demo Day.</p>
-  <p style="padding-bottom:60px">The final prototype was made using Sketch + Invision. For the purposes of our demo video, I also learnt to animate a few interactions in Axure RP.</p>
-</div>
-<img class="hero-img" src="img/portfolio/fridgit/hifi.jpg" alt="hi-fi">
-<div class="container-narrow">
-  <h1 class="section-heading">OUTCOME</h1>
-  <h1 class="section-title">Positive response and a whole lot learnt</h1>
-  <p>We were among the Top 12 Hatchery teams invited to “Demo Day” to give our final pitch to a panel of judges. We were met with an overwhelmingly positive response from both the audience and judges, making us proud of what we were able to accomplish in such a short amount of time.</p>
-  <p><em>View our <strong><a href="img/portfolio/fridgit/pitch-deck.pdf" target="_blank">pitch deck here</a></strong> & check out our <strong><a href="https://hatchery.engineering.utoronto.ca/team/frigit/" target="_blank">demo video here (skip to 5:45).</a></strong></em></p>
-  <p style="padding-bottom:60px">Since then, the team has put Fridgit on hold to explore other opportunities in our respective fields. To this day, we still receive the occasional nudge from a friend, colleague, or even complete stranger, asking us about Fridgit. Perhaps with a little more experience under our belts, Fridgit will once again become a product of the future.</p>
-</div>
-
-<!-- Extra stuff for now -->
-<div class="container-narrow">
-  <input id="toggle" type="checkbox" checked="1">
-  <label for="toggle"></label>
-  <div id="expand">
-    <h1 class="section-subtitle">The story behind our logo</h1>
-    <p>I don’t do a ton of logo design, but as the only designer on my team…well, someone had to do it. So, with allowance for some creative freedom, the first thing I did was to get my team to brainstorm some words that they would want associated with our brand. Here were a few that we came up with:</p>
-    <ul>
-      <li>Cool, fresh, clean</li>
-      <li>Innovative, high-tech, digital</li>
-      <li>Simple, dependable, organized</li>
-    </ul>
-    <p>This was enough to get my creative juices flowing. With the name “Fridgit” in mind, I explored a whole range of options by playing around with colours, shapes, and fonts. Cool colours or warm? Soft edges or hard? I was thinking about how to convey our list of buzz words while trying to incorporate elements of a fridge—it was in our name after all!</p>
-    <img class="img-fluid img-in-body" src="img/portfolio/fridgit/logo-brainstorm.jpg" alt="brainstorm">
-    <p>As we progressed a little further with the tech, I had a talk with the team about our product vision, which included the future integration of voice artificial intelligence and having Fridgit act as an assistant similar to Apple’s Siri or Amazon’s Alexa. Through user research, I was able to gain some additional insight into users’ perception of our technology.</p>
-    <p>In our initial UX survey, we asked our users what they would prefer to think of Fridgit as. Other than a plain ol’ food inventory tracker, 25% mentioned “smart fridge companion”, and another 15% mentioned an assistant of sorts. So it was really no surprise that Fridgit started to turn into our own mini-mascot. We wanted to give Fridgit a personality--and so did our users!</p>
-    <img class="img-fluid img-in-body" src="img/portfolio/fridgit/final-logo.jpg" alt="logo">
-    <p>(You might have noticed that we ended up landing on something quite similar to the android logo...not on purpose, but there’s a reason why everyone loves the little guy!)</p>
-    <h1 class="section-subtitle">All legitimate products have websites, right?</h1>
-    <p>With our final pitch and demo day coming up, we thought it would be nice to have a simple client-facing website that could promote our brand, inform users of our product, and add anticipation to the future release of our product. As usual, I started with some low fidelity mockups, focusing mainly on layout and the organization of content. I collaborated with our marketing guru to determine what information we should include and what should be prioritized. I decided to keep the content to a single page for simplicity, but also so that we could control and direct the flow of information taken in by the user.</p>
-    <p>Eventually I started to incorporate branding elements, colours, and visual style into the design. The end result can be seen below.</p>
-    <img class="img-fluid img-in-body" src="img/portfolio/fridgit/website.jpg" alt="website">
-  </div>
-</div>
-
-<br>
-<!-- Portfolio Grid -->
-<section class="bg-light" id="portfolio">
-  <br><br><br>
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" href="voluntree.html">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/thumbnail/voluntree.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <div class="portfolio-caption-title">Voluntree &mdash;</div>
-            <div class="portfolio-caption-tagline">a social volunteering platform</div>
-            <div class="portfolio-caption-tags">UX research &ensp;/&ensp; product design &ensp;/&ensp; usability testing</div>
-          </div>
-        </div>
+      <img class="img-fluid rounded" src="img/portfolio/fridgit/header.jpg" alt="fridgit">
+    </div>
+  </header>
 
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" href="fridgit.html">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+  <section id="overview">
+    <div class="div-section">
+      <div class="container-narrow">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="col-pad-right">
+              <h2>Overview</h2>
+              <p>In the summer of 2017 I participated in the University of Toronto’s Hatchery Entrepreneurship Program, a summer long accelerator and pitch competition that helps students bring their startup ideas to life. I became one of 6 co-founders of Fridgit—a smart inventory tracking device that changes the way you manage the food in your fridge.</p>
+              <p>As cohorts of the Hatchery program, we were expected to deliver a working prototype and final product pitch within the 4-month timeframe. Armed with a passion for machine learning and a keen interest in saving time/effort/money on food, my team decided to pursue a product that represented the innovation-hungry university students we were.</p>
             </div>
-            <img class="img-fluid" src="img/thumbnail/fridgit.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <div class="portfolio-caption-title">Fridgit &mdash;</div>
-            <div class="portfolio-caption-tagline">a smart inventory tracking device</div>
-            <div class="portfolio-caption-tags">product design &ensp;/&ensp; web design &ensp;/&ensp; brand development</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="col-pad-left">
+              <br>
+              <h3>Role</h3>
+              <p>UI/UX & Growth Designer</p>
+              <h3>Timeline</h3>
+              <p>May 2017 - Sept 2017</p>
+              <h3>Tools</h3>
+              <p>Sketch, Axure RP, InVision</p>
+              <h3>Team</h3>
+              <p>Brian Aly, Vishal Dumont, Lauren Ip (me!), Jeremy Khoo, Alex Lin, Nasa Nguyen</p>
+          </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" href="spotify.html">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/thumbnail/spotify.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <div class="portfolio-caption-title">Redesigning Spotify &mdash;</div>
-            <div class="portfolio-caption-tagline">a usability case study</div>
-            <div class="portfolio-caption-tags">task analysis &ensp;/&ensp; wireframing &ensp;/&ensp; usability testing</div>
-          </div>
-        </div>
+      </div>
+    </div>
+
+    <div id="problem" class="div-section">
+      <div class="container-narrow">
+        <h5>THE PROBLEM</h5>
+        <h3>Keeping track of food and groceries is tough.</h3>
+        <p>For students, working professionals, and parents who must often balance a multitude of responsibilities and commitments, keeping track of food can be tough. <mark>Meal planning requires time and effort that many people just don’t have</mark>—things like knowing what’s in your fridge now, what groceries you need to buy and when to buy them. This results in time, effort, money and food being wasted, and can have an unhealthy impact on diet.</p>
+      </div>
+    </div>
+    <div id="hmw" class="div-section bg-light">
+      <div class="container-narrow">
+        <h2><span class="font-purple">How might we</span> help people to better manage their groceries?</h2>
+      </div>
+    </div>
+    <div id="solution" class="div-section">
+      <div class="container-narrow">
+        <h5>THE SOLUTION</h5>
+        <h3>Give people access to their fridge anytime, anywhere.</h3>
+        <p>Enter Fridgit, <mark>a retrofitting Internet of Things (IOT) device that turns your typical fridge into one that is smart and connected.</mark> Using machine learning-based image recognition software, Fridgit tracks the movement of food in and out of your fridge, and uses this information to deliver expiration date reminders, grocery suggestions and recipe recommendations right to your phone.</p>
+        <img class="img-fluid img-in-body" src="img/portfolio/fridgit/challenge.jpg" data-action="zoom" alt="fridgit as an IOT device">
+        <p>We knew that ensuring a good user experience would be crucial to Fridgit’s success, and would likely be the determining factor for consumers deciding whether or not to adopt the technology. Our goal was to create a product that could both enhance and simplify people’s lifestyles by <mark>helping users shop smarter, eat healthier, and reduce household food waste.</mark></p>
+        <img class="img-fluid img-in-body" src="img/portfolio/fridgit/final.png" data-action="zoom" alt="final design">
+      </div>
+    </div>
+    <div id="contribution" class="div-section bg-light">
+      <div class="container-narrow">
+        <h3>My contribution</h3>
+        <p>As the sole UI/UX designer on the team I was primarily responsible for designing the interface of our mobile app. <mark>I worked alongside 2 developers and 1 project manager</mark> to bring our ideas from paper sketches to a demo-ready prototype.</p>
+        <p>My role later transformed into something along the lines of a <mark>growth hacker,</mark> where I worked with our marketing strategist to solidify brand and product vision. I helped to also build a cohesive brand across all our marketing materials through the design of our logo, pitch deck and consumer facing website.</p>
       </div>
     </div>
   </section>
 
-<!-- Footer -->
-<footer class="bg-light">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-4">
-
-        <ul class="list-inline social-buttons">
-          <li class="list-inline-item">
-            <a href="mailto:lauren.ip@outlook.com">
-              <i class="fa fa-envelope"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://linkedin.com/in/lauren-ip" target="_blank">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.behance.net/laurenipd0c9" target="_blank">
-              <i class="fa fa-behance"></i>
-            </a>
-          </li>
-        </ul>
-
-        <span class="copyright">Designed & coded with love &copy; Lauren Ip 2018</span>
+  <section id="discovery">
+    <div class="div-section">
+      <div class="container-narrow">
+        <h2>I. Discovery</h2>
+        <h3>User research</h3>
+        <p>When I first joined the team <mark>there was no real design direction.</mark> We had the hardware and the software, but nothing our users could actually interface with! While the capabilities of our image recognition system were great, learning what actual value we could bring to users was a challenge on its own.</p>
+        <p>Although our team had already done some market research prior, <mark>I pushed for us to release a more focused UX survey</mark> in order to get a better understanding of 1) what exactly users wanted and 2) what they actually needed. Our target users were those who had experience using mobile applications, had a traditional refrigerator (non-smart fridge), and did their own grocery shopping. We asked questions like:</p>
+        <br><blockquote class="blockquote"><p>“How often do users shop for groceries?"</p></blockquote>
+        <blockquote class="blockquote"><p>"How many of our users live on their own, versus with others? How many people would usually be sharing a single fridge?"</p></blockquote>
+        <blockquote class="blockquote"><p>“Do most users shop for just themselves, or their entire household? Do they share this responsibility with others?"</p></blockquote>
+        <blockquote class="blockquote"><p>“What are the biggest paint points in users’ current food management workflow?"</p></blockquote>
+        <blockquote class="blockquote"><p>“What are users’ tolerance levels with regards to the accuracy and robustness of the technology?"</p></blockquote><br>
       </div>
     </div>
-  </div>
-</footer>
+    <div id="survey-results" class="div-section bg-light">
+          <div class="container-narrow">
+            <h3>Survey results</h3>
+            <p>Using the survey, we were able to identify users’ current pain points in the food management process, and understand the context in which users would use the product in their daily workflow. We ended up receiving <mark>288 responses in total,</mark> half of which came from users aged 19-25 and 40% of which were users aged 26-65. About half of respondents were single, the other half married or in a relationship.</p>
+            <img class="img-fluid img-in-body" src="img/portfolio/fridgit/survey.png" data-action="zoom" alt="survey results">
+            <p>Some key insights include:</p>
+            <ul>
+              <li>Majority of users go grocery shopping <mark>at least once every week.</mark></li>
+              <li><mark>Less than 10%</mark> of users live alone.</li>
+              <li>More than half of users <mark>shop for themselves only,</mark> rather than the entire household.</mark></li>
+              <li>More than half of users <mark>work over 40 hours per week.</mark></li>
+              <li>The first thing users want to see upon opening the app is <mark>1) everything that’s in their fridge,</mark> and <mark>2) food expiry or restocking notifications.</mark></li>
+              <li>The aspects of managing food inventory that users find most difficult include <mark>keeping track of expiry dates</mark>, estimating the <mark>quantity of food</mark> to buy, and securing <mark>recipe ingredients.</mark></li>
+            </ul>
+          </div>
+        </div>
+    <div id="personas" class="div-section">
+      <div class="container-narrow">
+        <h3>Guiding personas & scenarios</h3>
+        <p>Using insights garnered from both survey and user interviews, I was able to craft <mark>a set of personas</mark> representing each one of our user groups. I mapped out several <mark>use cases and scenarios</mark> to help guide us in determining functional requirements for what we decided would be a mobile app.</p>
+        <img class="img-fluid img-pad-top" src="img/portfolio/fridgit/personas.png" data-action="zoom" alt="user personas">
+      </div>
+    </div>
+    <div id="reqs" class="div-section bg-light">
+      <div class="container-narrow">
+        <h3>Functional requirements</h3>
+        <p>Using the survey we sent out, we were also able to get a sense of what sort of features our users thought were most important. I then sat down with our developers to tease out the technical limitations of our system and understand the design constraints I would have to work with. This included data storage issues, data quality concerns, and planning for edge cases.</p>
+        <br><blockquote class="blockquote"><p>“‍What happens if Fridgit doesn’t recognize an item? What happens if Fridgit makes a mistake? How can users correct it?"</p></blockquote>
+        <blockquote class="blockquote"><p>“How good is the quality of photos taken by Fridgit? What kind of information can Fridgit pull from an image? Colour? Quantity? Brand?"</p></blockquote>
+        <blockquote class="blockquote"><p>“What kind of user input data can we store?"</p></blockquote><br>
+        <p>Taking all this into consideration, we eventually agreed on a solid set of requirements and functionalities that would be included in our minimum viable product (MVP).</p><br>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <p class="smaller">Features from most to least important:</p>
+              <p class="smaller">
+              1. Reminders about food going bad<br>
+              2. Reminders about food low on stock<br>
+              3. Storage advice for individual food items<br>
+              4. Suggestions for grocery restocking<br>
+              5. Built-in shopping list<br>
+              </p>
+            </div>
+            <div class="col-sm">
+              <p class="smaller">Less important, but nice-to-haves:</p>
+              <p class="smaller">
+              1. Nutritional facts for individual food items<br>
+              2. Overall nutrition summary<br>
+              3. Activity log detailing action history<br>
+              4. Recipe suggestions<br>
+              5. Semi- or fully- automated grocery delivery<br>
+              </p>
+            </div>
+          </div>
+        </div>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/popper/popper.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      </div>
+    </div>
+  </section>
 
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <section id="design">
+    <div id="sitemap" class="div-section">
+      <div class="container-narrow">
+        <h2>II. Design Phase</h2>
+        <h3>Ideation & planning</h3>
+        <p>Before doing any actual sketching, I usually like to get a sense of the general hierarchical structure I would like the application to follow. So with Fridgit, I started off by <mark>building a sitemap</mark> off the requirements we had gathered previously, planning out the information architecture and navigational structure.</p>
+        <img class="img-fluid img-pad-top" src="img/portfolio/fridgit/sitemap.png" data-action="zoom" alt="sitemap">
+      </div>
+    </div>
+    <div id="hifi" class="div-section bg-light">
+      <div class="container-narrow">
+        <h3>Sketches to wireframes</h3>
+        <p>When it came to actually designing each screen, I bounced ideas off my teammates and <mark>looked into existing products with similar task flows</mark> for inspiration. Together we explored a variety of design options until chicken scratches eventually turned into low fidelity wireframes, and low fidelity turned into (many iterations of) high fidelity.</p>
+        <img class="img-fluid img-pad-top" src="img/portfolio/fridgit/sketches1.png" data-action="zoom" alt="low fidelity sketches">
+        <img class="img-fluid img-in-body" src="img/portfolio/fridgit/sketches2.png" data-action="zoom" alt="higher fidelity prototype">
+        <p>Though we were crunched for time, <mark>I also met with representative users</mark> whenever I could to get feedback on the general layout and functional elements of the user interface. I made sure to validate some of the design decisions I had made with regards to specific user task flows (such as viewing food items, manual input/correction of items, creating a shopping list) to ensure we were heading in the right direction.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- Contact form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
+  <section id="demoday">
+    <div class="div-section">
+      <div class="container-narrow">
+        <h2>III. Demo Day</h2>
+        <p>We were among the <mark>Top 12 Hatchery teams</mark> invited to “Demo Day” to give our final pitch to a panel of judges. We were met with an overwhelmingly positive response from both the audience and judges, making us proud of what we were able to accomplish in such a short amount of time. View our <a href="img/portfolio/fridgit/pitch-deck.pdf" target="_blank">pitch deck</a> and <a href="https://hatchery.engineering.utoronto.ca/team/frigit/" target="_blank">demo video</a> below.</p>
+        <iframe src="https://drive.google.com/file/d/1NDIDE3PfJLLK8sdqQ-0S68mXg6RfJAln/preview" width="100%" height="420"></iframe>
+        <p><a href="img/portfolio/fridgit/pitch-deck.pdf" target="_blank">You can also access the pitch deck here.</a></p>
+        <a href="https://hatchery.engineering.utoronto.ca/team/frigit/" target="_blank"><img class="img-fluid img-pad-top" src="img/portfolio/fridgit/demo.jpg" alt="demo day video"></a>
+        <p><a href="https://hatchery.engineering.utoronto.ca/team/frigit/" target="_blank">You can also access the demo video here (skip to 5:45).</a></p>
+      </div>
+    </div>
+  </section>
 
-<!-- Custom scripts for this template -->
-<script src="js/agency.min.js"></script>
+  <section id="bonus">
+    <div class="div-section bg-light">
+      <div class="container-narrow">
+        <h2>Bonus Content</h2>
+        <p>If you've made it this far, you deserve some bonus content.</p><br>
+        <h3 id="logo">The story behind our logo</h3>
+        <p>I don’t do a ton of logo design, but as the only designer on my team…well, someone had to do it. So, with allowance for some creative freedom, the first thing I did was to get my team to brainstorm some words that they would want associated with our brand. Here were a few that we came up with:</p>
+        <ul>
+          <li>Cool, fresh, clean</li>
+          <li>Innovative, high-tech, digital</li>
+          <li>Simple, dependable, organized</li>
+        </ul>
+        <p>This was enough to get my creative juices flowing. With the name “Fridgit” in mind, I explored a whole range of options by playing around with colours, shapes, and fonts. Cool colours or warm? Soft edges or hard? I was thinking about how to convey our list of buzz words while trying to incorporate elements of a fridge—it was in our name after all!</p>
+        <img class="img-fluid img-in-body" src="img/portfolio/fridgit/logo-brainstorm.jpg" data-action="zoom" alt="logo brainstorming">
+        <p>As we progressed a little further with the tech, I had a talk with the team about our product vision, which included the future integration of voice artificial intelligence and having Fridgit act as an assistant similar to Apple’s Siri or Amazon’s Alexa. Through user research, I was able to gain some additional insight into users’ perception of our technology.</p>
+        <p>In our initial UX survey, we asked our users what they would prefer to think of Fridgit as. Other than a plain ol’ food inventory tracker, 25% mentioned “smart fridge companion”, and another 15% mentioned an assistant of sorts. So it was really no surprise that Fridgit started to turn into our own mini-mascot. We wanted to give Fridgit a personality--and so did our users!</p>
+        <img class="img-fluid img-pad-top" src="img/portfolio/fridgit/final-logo.jpg" data-action="zoom" alt="final fridgit logo">
+      </div>
+    </div>
+    <div id="website" class="div-section">
+      <div class="container-narrow">
+        <h3>All legitimate products have websites right?</h3>
+        <p>With our final pitch and demo day coming up, we thought it would be nice to have a simple client-facing website that could promote our brand, inform users of our product, and add anticipation to the future release of our product.</p>
+        <p>As usual, I started with some low fidelity mockups, focusing mainly on layout and the organization of content. I collaborated with our marketing guru to determine what information we should include and what should be prioritized. I decided to keep the content to a single page for simplicity, but also so that we could control and direct the flow of information taken in by the user. Eventually I started to incorporate branding elements, colours, and visual style into the design. The end result can be seen below.</p>
+        <img class="img-fluid img-pad-top" src="img/portfolio/fridgit/website.jpg" data-action="zoom" alt="landing pages">
+      </div>
+    </div>
+  </section>
+
+  <!-- More Projects -->
+  <section class="div-section" id="more-projects">
+    <div class="container">
+      <h3>Check out another project:</h3>
+      <br>
+      <div class="row">
+            <div class="col-sm">
+              <a class="portfolio-card" href="journeyon.html">
+                <div class="card">
+                  <div class="hover-div rounded">
+                    <img class="card-img" src="img/thumbnail/journeyon.jpg" alt="journeyon">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title font-weight-normal">JourneyOn</h3>
+                    <p class="card-text">Empowering people with Type 1 Diabetes to travel with confidence</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm">
+              <a class="portfolio-card" href="myuhn.html">
+                <div class="card">
+                  <div class="hover-div rounded">
+                    <img class="card-img" src="img/thumbnail/myuhn.jpg" alt="myuhn">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title font-weight-normal">myUHN</h3>
+                    <p class="card-text">Enabling access to personal health information for a better patient experience</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm">
+              <a class="portfolio-card" href="voluntree.html">
+                <div class="card">
+                  <div class="hover-div rounded">
+                    <img class="card-img" src="img/thumbnail/voluntree.jpg" alt="voluntree">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title font-weight-normal">Voluntree</h3>
+                    <p class="card-text">A social platform that motivates people to volunteer in their communities</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+      <div class="text-right" id="other-cool-things"><a href="index.html#other-work"><h3>👉&nbsp;Other Cool Things I've Done</h3></a></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light" id="footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="mailto:lauren.ip@outlook.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://linkedin.com/in/lauren-ip" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+          <span class="copyright">Designed & coded with ❤️ &copy; Lauren Ip 2020</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/typed.js/typed.min.js"></script>
+  <script src="vendor/zoom-vanilla/zoom-vanilla.min.js"></script>
+  <script src="vendor/progress-sidebar/progress-sidebar.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.min.js"></script>
 
 </body>
 

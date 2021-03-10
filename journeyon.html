@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>JourneyOn</title>
+
+  <!-- Template Fonts -->
+  <link href="http://fontlibrary.org/face/hk-grotesk" rel="stylesheet" media="screen" type="text/css"/>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/08b9ba6fd9.js" crossorigin="anonymous"></script>
+
+  <!-- Vendor CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/zoom-vanilla/zoom.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">LAUREN IP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu&nbsp;
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#portfolio">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Lauren Ip - Resume.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <nav class="toc">
+  	<ul>
+  		<li><a href="#overview">Overview</a></li>
+        <ul>
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#solution">Solution</a></li>
+  			</ul>
+  		<li><a href="#discovery">I. Discovery Phase</a></li>
+  			<ul>
+          <li><a href="#challenge-areas">Challenge Areas</a></li>
+          <li><a href="#user-types">User Types</a></li>
+  			</ul>
+      <li><a href="#design">II. Design Phase</a></li>
+        <ul>
+          <li><a href="#lofi">Low Fidelity Wires</a></li>
+        </ul>
+      <li><a href="#evaluation">III. User Testing</a></li>
+        <ul>
+          <li><a href="#quant">Quantitative Results</a></li>
+          <li><a href="#qual">Qualitative Results</a></li>
+        </ul>
+      <li><a href="#iteration">IV. Iteration</a></li>
+        <ul>
+          <li><a href="#final-design">Guiding Principles</a></li>
+          <li><a href="#hifi">High Fidelity Prototype</a></li>
+  			</ul>
+      <li><a href="#outcome">Outcome</a></li>
+      <li><a href="#reflection">Reflection</a></li>
+  	</ul>
+    <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+      <path stroke="#5746EC" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="miter" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+    </svg>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container-narrow">
+      <div class="project-header">
+        <h1>JourneyOn</h1>
+        <h4>Empowering people with type 1 diabetes to travel with confidence</h4>
+      </div>
+    </div>
+    <div class="container">
+      <img class="img-fluid rounded" src="img/portfolio/journeyon/header.jpg" alt="journey on">
+    </div>
+  </header>
+
+  <section id="overview">
+    <div class="div-section">
+      <div class="container-narrow">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="col-pad-right">
+              <h2>Overview</h2>
+              <p>During my final year in the undergraduate Industrial Engineering program at the University of Toronto, I had the pleasure of working on a capstone design project with <a href="https://humanfactors.ca/" target="_blank">Healthcare Human Factors (HHF)</a> to design a solution that would tackle the challenges that people living with type 1 diabetes face while travelling.</p>
+              <p>You can read the shortened version of this case study on Medium <a href="https://laurenip.medium.com/empowering-people-who-live-with-type-1-diabetes-to-travel-with-confidence-d3cb79834dcf" target="_blank">here.</a></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="col-pad-left">
+              <br>
+              <h3>Role</h3>
+              <p>Designer</p>
+              <h3>Timeline</h3>
+              <p>Sep 2019 - Apr 2020</p>
+              <h3>Tools</h3>
+              <p>Figma</p>
+              <h3>Team</h3>
+              <p>Ryan Cheng, Meggie Debnath, Lauren Ip (me!)</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-narrow"><hr></div>
+    <div id="background" class="div-section">
+      <div class="container-narrow">
+        <h5>A TIDBIT OF KNOWLEDGE</h5>
+        <h3>What is type 1 diabetes?</h3>
+        <p><mark>Type 1 diabetes is a chronic disease that affects the way your body regulates blood sugar, or glucose.</mark> While glucose is used to fuel your body’s cells, it requires the help of a key hormone called insulin—which people with type 1 diabetes (T1Ds) are unable to produce. Without insulin, blood sugar levels can spike up and down to extreme levels very quickly.</p>
+        <br>
+        <h3>What about type 2 diabetes?</h3>
+        <p>Most people are familiar with type 2 diabetes, as it is much more common than type 1. However, they are different diseases with unique causes and challenges. People with type 2 diabetes have insulin resistance, meaning the body can still produce insulin, but is unable to use it effectively. <mark>T1Ds are unable to produce insulin at all, which makes basic nutritional management much more complex.</mark> We decided to focus on type 1 because of the greater risks associated with travel.</p>
+        <p><a href="https://www.healthline.com/health/difference-between-type-1-and-type-2-diabetes#causes" target="_blank">Learn more about the differences between the two →</a></p>
+      </div>
+    </div>
+    <div class="container-narrow"><hr></div>
+    <div id="problem" class="div-section">
+      <div class="container-narrow">
+        <h5>THE PROBLEM</h5>
+        <h3>Travelling with Type 1 Diabetes can be stressful, uncertain, and anxiety-inducing.</h3>
+        <p>While a vacation trip to Mexico might mean relaxation and enjoyment for most people, it can mean stress and anxiety for T1Ds. There is <mark>a huge amount of planning and uncertainty</mark> associated with travelling with T1D that often detracts from an ideal experience—for example, keeping track of supplies/medications, constantly monitoring blood sugar levels, and preparing for life-or-death emergency situations. </p>
+        <p>These travel-related factors can cause certain stressors and trigger emotional responses, often classified as <mark>diabetes distress.</mark> Our goal was to decrease this distress among T1Ds and instead increase their overall confidence in travelling.</p>
+      </div>
+    </div>
+    <div id="hmw" class="div-section bg-light">
+      <div class="container-narrow">
+        <h2><span class="font-purple">How might we</span> reduce diabetes distress amongst T1Ds and improve their overall travelling experience?</h2>
+      </div>
+    </div>
+    <div id="solution" class="div-section">
+      <div class="container-narrow">
+        <h5>THE SOLUTION</h5>
+        <h3>A personalized tool to help T1Ds feel confident and prepared during travel.</h3>
+        <p>Although there are existing resources that provide T1Ds with general tips and advice, many of them <mark>only address certain aspects of the travel journey,</mark> and are <mark>impersonal to their itinerary, treatment plan, and preferences.</mark> Users must actively seek out information that is relevant to their own situation, adding unnecessary burden to an already stressful process.</p>
+        <p>So, we developed a digital travel companion called <mark><em>JourneyOn</em>, a mobile application that guides T1Ds through the entire traveling process,</mark> from planning and preparation to getting around their destinations. <em>JourneyOn</em> helps alleviate the burden of gathering and packing supplies, improves interactions with security authorities, and provides resources to navigate a variety of different travel situations, all in a smart and personalized way.</p>
+        <div class="row">
+          <div class="col-7">
+            <img class="img-fluid img-pad-top" src="img/portfolio/journeyon/final_1a.png" data-action="zoom" alt="final design">
+          </div>
+          <div class="col-5">
+            <img class="img-fluid img-pad-top" src="img/portfolio/journeyon/final_1b.gif" data-action="zoom" alt="final design">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <img class="img-fluid img-pad-top" src="img/portfolio/journeyon/final_2b.gif" data-action="zoom" alt="final design">
+          </div>
+          <div class="col-7">
+            <img class="img-fluid img-pad-top" src="img/portfolio/journeyon/final_2a.png" data-action="zoom" alt="final design">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contribution" class="div-section bg-light">
+      <div class="container-narrow">
+        <h3>My contribution</h3>
+        <p>My team and I carried out research activities such as stakeholder interviews, user interviews, research synthesis and usability testing. During the design phase I led the prototyping and visual design portion of the process, turning our low-fidelity wireframe sketches into a testable prototype using Figma.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="discovery">
+    <div class="div-section">
+      <div class="container-narrow">
+        <h2>I. Discovery Phase</h2>
+        <h3>Initial research</h3>
+        <p>My team reviewed a variety of literature and online publications in order to <mark>better understand the problem space</mark> and <mark>identify current gaps</mark> in technology. We scoured online communities, forums, and social media to collect some initial data (in the form of comments, discussions, etc.) from representative users.</p>
+        <br>
+        <h3>Gaining deeper insights from T1Ds</h3>
+        <p>In order to dig deeper into the underlying factors that influence their travel experiences, it was incredibly important for us to conduct <mark>1-on-1 interviews</mark> with T1Ds. We created a safe and open environment where T1Ds were comfortable sharing their lived experiences and were able to express how these challenges affected them on an emotional level. At the end, we left with five key takeaways:</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <p class="font-purple big-bold">1</p>
+              <p class="smaller">Inherent fear and anxiety are associated with a T1D’s first few trips.</p>
+            </div>
+            <div class="col-sm">
+              <p class="font-purple big-bold">2</p>
+              <p class="smaller">Feelings of fear and anxiety intensify when travelling to an unfamiliar destination or a remote location.</p>
+            </div>
+            <div class="col-sm">
+              <p class="font-purple big-bold">3</p>
+              <p class="smaller">Most stress is generated during the planning phase, since it involves thinking about worst-case scenarios.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <p class="font-purple big-bold">4</p>
+              <p class="smaller">T1Ds rely heavily on supports and resources to help them prepare for their first few trips.</p>
+            </div>
+            <div class="col-sm">
+              <p class="font-purple big-bold">5</p>
+              <p class="smaller">Travel companions ease the travelling process by providing support throughout.</p>
+            </div>
+            <div class="col-sm">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="challenge-areas" class="div-section bg-light">
+          <div class="container-narrow">
+            <h3>Exploring challenge areas</h3>
+            <p>The interviews also provided insight into the main challenge areas that T1Ds encounter while travelling:</p>
+            <br>
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object img-xs" src="img/portfolio/journeyon/glucose.png" alt="glucose monitor">
+              </div>
+              <div class="media-body">
+                <p class="media-heading smaller"><strong>Awareness and control of blood glucose levels</strong><br>Determining how unfamiliar foods, activities, or time zone changes affect blood glucose levels can put T1Ds in a stressful and precarious situation.</p>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object img-xs" src="img/portfolio/journeyon/emerg.png" alt="emergency">
+              </div>
+              <div class="media-body">
+                <p class="smaller"><strong>Getting help in an emergency situation</strong><br>Determining how unfamiliar foods, activities, or time zone changes affect blood glucose levels can put T1Ds in a stressful and precarious situation.</p>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object img-xs" src="img/portfolio/journeyon/meds.png" alt="medication">
+              </div>
+              <div class="media-body">
+                <p class="smaller"><strong>Making a detailed medication list</strong><br>Not only do T1Ds keep a record of their medication and insulin pump settings, they may also have to anticipate that certain countries have different names for the insulin they use.</p>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object img-xs" src="img/portfolio/journeyon/security.png" alt="security officer">
+              </div>
+              <div class="media-body">
+                <p class="smaller"><strong>Navigating airport/border security</strong><br>If security personnel are unfamiliar with type 1 diabetes, T1Ds may receive questions about their insulin pump or snacks that they are bringing, which can be a frustrating and uncomfortable interaction.</p>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object img-xs" src="img/portfolio/journeyon/supplies.png" alt="supplies">
+              </div>
+              <div class="media-body">
+                <p class="smaller"><strong>Gathering of supplies</strong><br>Figuring out what insulin pump and glucose monitoring supplies are needed and determining how much they should bring as a backup can be a daunting task.</p>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <img class="media-object img-xs" src="img/portfolio/journeyon/storage.png" alt="cold storage">
+              </div>
+              <div class="media-body">
+                <p class="smaller"><strong>Storage of supplies</strong><br>Ensuring that their supplies, especially insulin, are kept at the right temperature and remain intact can be challenging, especially if encountering varying environmental conditions.</p>
+                <p class="caption">Icons made by Smashicons, photo3idea_studio, Freepik & Pixelmeetup from flaticon.com.
+              </div>
+            </div>
+          </div>
+        </div>
+    <div id="user-types" class="div-section">
+      <div class="container-narrow">
+        <h3>Focusing in on our user types</h3>
+        <p>We realized that the emotional stress surrounding travel for T1Ds stemmed from a general <mark>lack of knowledge/experience.</mark> Those who had lived with T1D for much longer had already figured out their own methods and processes for travel, simply based on lived experience. Where there was a greater gap in knowledge was for <mark>those who were less experienced with T1D travel,</mark> such as youth/young adults with T1D, or someone who was recently diagnosed with T1D in a later stage in life.</p>
+        <p>We decided to focus on the following 3 user types, all with limited experience travelling with T1D by themselves: <mark>1) Young & Inexperienced, 2) Recently Diagnosed, and 3) Parent & Child Duo.</mark></p>
+        <img class="img-fluid img-pad-top" src="img/portfolio/journeyon/user-types.png" data-action="zoom" alt="3 user types">
+      </div>
+    </div>
+  </section>
+
+  <section id="design">
+    <div class="div-section bg-light">
+      <div class="container-narrow">
+        <h2>II. Design</h2>
+        <h3>Sketching & brainstorming</h3>
+        <p>During our brainstorm we sketched out a <mark>light journey map</mark> to capture the pain points and emotional experiences felt by T1Ds throughout a typical travel journey. We outlined opportunity areas at each stage of the journey, which helped us come up with a set of solutions/features that addressed the specific challenges that T1Ds face.</p>
+        <p>A <mark>mobile application</mark> was selected as the primary solution due to its capacity to provide personalized information to the user, on top of the <mark>convenient, accessible, and portable nature</mark> of the digital platform itself. After narrowing down an MVP set of features based on importance and feasibility, we started to whiteboard a rough outline of what the mobile app would look like.</p>
+        <img class="img-fluid img-pad-top" src="img/portfolio/journeyon/sketching.png" data-action="zoom" alt="journey map and mobile sketches">
+      </div>
+    </div>
+    <div id="lofi" class="div-section">
+      <div class="container-narrow">
+        <h3>Low fidelity wireframes</h3>
+        <p>I then took our sketches and turned them into a more detailed low-fidelity prototype in Figma.</p>
+        <div id="carouselLofi" class="carousel slide crsl-in-body" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/portfolio/journeyon/lofi-1.jpg" alt="Results & Reports Summary page" data-action="zoom">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/portfolio/journeyon/lofi-2.jpg" alt="Report Details page" data-action="zoom">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/portfolio/journeyon/lofi-3.jpg" alt="Report Details page" data-action="zoom">
+            </div>
+            <a class="carousel-control-prev" href="#carouselLofi" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselLofi" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <ol class="carousel-indicators">
+            <li data-target="#carouselLofi" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselLofi" data-slide-to="1"></li>
+            <li data-target="#carouselLofi" data-slide-to="2"></li>
+          </ol>
+        </div>
+        <p>We also mocked up a complementary part of our solution, an improved medical information card for T1Ds to show airport security personnel when checking in carry-on baggage (allowing them to bring in certain medical supplies and wear their insulin pump).</p>
+        <img class="img-fluid img-pad-top" src="img/portfolio/journeyon/airport-cards.png" data-action="zoom" alt="journey map and mobile sketches">
+      </div>
+    </div>
+  </section>
+
+  <section id="evaluation">
+    <div class="div-section bg-light">
+      <div class="container-narrow">
+        <h2>III. Evaluation</h2>
+        <h3>User testing</h3>
+        <p>We tested the first iteration of our prototype with real users to get feedback on the overall design concept and product features. We had a total of <mark>five participants, ranging from ages 15 to 58</mark> and including <mark>both T1Ds and their caregivers.</mark> An effort was made to recruit T1Ds who were more recently diagnosed, therefore having less experience travelling with T1D.</p>
+        <img class="img-fluid img-pad-top" src="img/portfolio/journeyon/user-testing.jpg" data-action="zoom" alt="journey map and mobile sketches">
+      </div>
+    </div>
+    <div id="quant" class="div-section">
+      <div class="container-narrow">
+        <h3>Quantitative results</h3>
+        <p>We used the <mark>T-PAID scale,</mark> a travel-related version of the Problem Areas in Diabetes (PAID) scale, to measure diabetes distress in users before and after using JourneyOn. The results showed a <mark>mean reduction of 23.5 points (SD = 14.9) in diabetes distress,</mark> which indicates a very effective intervention. A system usability score (SUS) questionnaire was also given to participants to assess the overall usability of the prototype, with a resulting <mark>mean SUS score of 88.0 (SD = 10.8)</mark> on a scale of 100.</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <p class="font-purple big-bold">23.5 points</p>
+              <p class="smaller">mean reduction in diabetes distress. A 10-15 point reduction is an indication of an effective intervention.</p>
+            </div>
+            <div class="col-sm">
+              <p class="font-purple big-bold">88.0</p>
+              <p class="smaller">mean SUS score. A score of 68 is considered "average", and above 85 is "excellent".</p>
+            </div>
+          </div>
+        </div>
+        <img class="img-fluid img-pad-top" src="img/portfolio/journeyon/tpaid-beforeafter.png" data-action="zoom" alt="journey map and mobile sketches">
+      </div>
+    </div>
+    <div id="qual" class="div-section bg-light">
+      <div class="container-narrow">
+        <h3>Qualitative results</h3>
+        <p>Overall the design received very positive feedback from users. Most features were generally seen as useful, though we received many suggestions for ways to make our feature set more robust.</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <p class="font-purple big-bold">5 out of 5</p>
+              <p class="smaller">participants found the app intuitive and easy to use overall</p>
+            </div>
+            <div class="col-sm">
+              <p class="font-purple big-bold">5 out of 5</p>
+              <p class="smaller">participants would use the app for their actual travels</p>
+            </div>
+            <div class="col-sm">
+              <p class="font-purple big-bold">4 out of 5</p>
+              <p class="smaller">participants ‍felt the app would help them travel with more confidence</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <blockquote class="blockquote"><p>“This all-in-one-place capability of the app alleviates the burden of self-searching. It’s like I can get reassurance from the app rather than other people.”</p></blockquote>
+        <br>
+        <p>Participants thought the <mark>to-do list and supplies checklist</mark> were the most useful features. They liked that it was tailored to their personal itinerary and treatment plan, but also emphasized <mark>the value of being able to customize or edit</mark> any auto-generated content from the app.</p>
+        <br>
+        <blockquote class="blockquote"><p>“I don’t usually use diabetes apps, but this to-do list with the timeline is useful for keeping track of things.”</p></blockquote>
+        <br>
+        <p> Some key areas of interest that came up often across participants included:</p>
+        <h3>
+          <span class="badge-fixed">Sharing trip information with others</span>
+          <span class="badge-fixed">Taking notes + storing personal documents</span>
+          <span class="badge-fixed">Notifications/reminders for upcoming activities + tasks</span>
+          <span class="badge-fixed">Finding + saving locations of interest</span>
+          <span class="badge-fixed">Connecting with other T1Ds in the area</span>
+        </h3>
+        <br>
+        <p>We also got feedback on features that were less useful, or required further consideration due to concerns over privacy or feasbility.</p>
+        <blockquote class="blockquote"><p>“Meal management doesn't feel like an appropriate area to receive advice here. It’s difficult to get accurate nutritional info such as carb counts, so I wouldn’t trust this anyway.”</p></blockquote>
+        <blockquote class="blockquote"><p>“If the airport was aware of the medical information card, it would be useful. But I’m wondering if the card would be trusted by security. How would they validate its authenticity?”</p></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="iteration">
+    <div class="div-section">
+      <div class="container-narrow">
+        <h2>IV. Iteration</h2>
+        <h3>Design changes</h3>
+        <p>Using the feedback we got from users, we made some important design changes to the initial prototype and made it higher-fidelity.</p>
+        <div id="carouselHifi" class="carousel slide crsl-in-body" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/portfolio/journeyon/hifi-1.png" alt="Making the to-do list the focal point of the app" data-action="zoom">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/portfolio/journeyon/hifi-2.png" alt="Adding notifications & trip sharing options" data-action="zoom">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/portfolio/journeyon/hifi-3.png" alt="Replacing the “Food” resource with “Notes” & “Documents”" data-action="zoom">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/portfolio/journeyon/hifi-4.png" alt="Removing purchase features to focus on supplies checklist" data-action="zoom">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/portfolio/journeyon/hifi-5.png" alt="Making the map feature more robust" data-action="zoom">
+          </div>
+          <a class="carousel-control-prev" href="#carouselHifi" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselHifi" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselHifi" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselHifi" data-slide-to="1"></li>
+          <li data-target="#carouselHifi" data-slide-to="2"></li>
+          <li data-target="#carouselHifi" data-slide-to="3"></li>
+          <li data-target="#carouselHifi" data-slide-to="4"></li>
+        </ol>
+      </div>
+      </div>
+    </div>
+    <div id="final-design" class="div-section bg-light">
+      <div class="container-narrow">
+        <h3>Principles of the “final” design</h3>
+        <p>The goal of JourneyOn was to <mark>reduce overall TDD levels throughout one’s travel journey</mark>. Our hope was for the application to allow users to feel less burdened by the amount of information they would normally have to search for or remember themselves, and ultimately inspire greater confidence in travelling. The “final” design places emphasis on:</p>
+        <ul>
+          <li><i class="fas fa-pencil-ruler font-purple"></i>&nbsp; <mark><strong>Personalization and customization.</strong></mark> The most important aspect of the solution is being able to tailor each resource/feature to the user, based on their specific trip itinerary and personal information. This means making any tips, advice or suggestions directly relevant to the user—no more of that generic stuff!</li>
+          <li><i class="fas fa-bolt font-purple"></i>&nbsp; <mark><strong>Ease of use and reduced workload.</strong></mark> User input methods are made as easy and convenient as possible to avoid putting additional burden on the user. Third party integrations also allow information to be imported from other applications, which help streamline and simplify the entire process.</li>
+          <li><i class="fas fa-fist-raised font-purple"></i>&nbsp; <mark><strong>Empowerment over enforcement.</strong></mark> JourneyOn uses language that carefully frames things as suggestions rather than dictates what users can or cannot do. JourneyOn is not a medical device or expert authority; it is simply a helpful tool that guides and facilitates, giving users full control over how they use the information and resources provided.</li>
+        </ul>
+      </div>
+    </div>
+    <div id="hifi" class="div-section">
+      <div class="container-narrow">
+        <h3>High-fidelity prototype</h3>
+        <p>Check out the full JourneyOn prototype below.</p>
+        <iframe class="img-in-body" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F2JuorGmkieTseJ9Izlse77%2FJourneyOn-Prototype%3Fnode-id%3D900%253A32507%26scaling%3Dscale-down" allowfullscreen></iframe>
+        <h3>Another round of testing...for another time</h3>
+        <p>Initially we had planned to do one more round of testing, to see what users thought after we made improvements to our first design. <mark>However, due to COVID-19 circumstances,</mark> we were only able to show our high-fidelity prototype to 2 users. (Can’t really say much about the results of two participants, but both had an overall positive reaction to the design, if you were curious).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="outcome">
+    <div class="div-section bg-light">
+      <div class="container-narrow">
+          <h2>Outcome</h2>
+          <p>Through our work with Healthcare Human Factors on JourneyOn, <mark>we were able to help them further their research and thinking around designing for the diabetes community.</mark> We hoped that our research would not only empower the greater diabetes community, but also inspire others to address these kinds of unique needs and experiences using a user-centered design approach.</p>
+          <p>As part of our efforts to disseminate this research to the broader public, <a href="https://laurenip.medium.com/empowering-people-who-live-with-type-1-diabetes-to-travel-with-confidence-d3cb79834dcf" target="_blank">we published a medium article</a> about our project and design process. You can check it out <a href="https://laurenip.medium.com/empowering-people-who-live-with-type-1-diabetes-to-travel-with-confidence-d3cb79834dcf" target="_blank">here.</a></p>
+        </div>
+      </div>
+  </section>
+
+  <section id="reflection">
+    <div class="div-section">
+      <div class="container-narrow">
+        <h2>Reflection</h2>
+        <h3>Project challenges</h3>
+        <p>One of the biggest challenges in this process was <mark>finding representative users</mark> who were willing and able to participate in our studies. While we still gained valuable insights from the small group of T1Ds/caregivers who did participate, a larger variety of participants might have given a more in-depth representation of specific needs across the T1D/caregiver population.</p>
+        <p>Another challenge was the <mark>huge learning curve.</mark> I went from having little to no understanding of type 1 diabetes, to learning all about how insulin pumps work; the difference between a Continuous Glucose Monitor and a Flash Glucose Monitor; what a basal/bolus ratio is; how important it is for insulin to be kept at cool temperatures...and the list goes on! But this all goes without saying that <mark>what made our app stand out to users was the attention we paid to those finer, nuanced details.</mark></p>
+      </div>
+    </div>
+      <div id="future" class="div-section bg-light">
+        <div class="container-narrow">
+          <h3>Considerations for the future</h3>
+          <p>Given more time and resources, there were several areas of consideration we would’ve liked to explore in the future:</p>
+          <ol>
+            <li><mark><strong>Account sharing & collaboration.</strong></mark> A recurring theme among participants, especially caregivers of PWDs, was concerning functionality that would support the dynamics of a caregiver-PWD relationship, especially in the case of a parent who might be using the application for their young/dependent child.</li>
+            <li><mark><strong>Social connecting & community networks.</strong></mark> Our design incorporates aspects of social connection through a rudimentary “locate other users” feature, but this was intended more for peer-to-peer support in emergency situations. It would be interesting to explore the potential of building a more extensive JourneyOn community or support network to enhance the overall user experience.</li>
+            <li><mark><strong>System robustness & information quality.</strong></mark> Making the application more robust in handling the storage of trip information should be kept in mind as it is used over time. Resources play a major part in the application, so making sure that the information JourneyOn provides is rich, comprehensive, and kept up to date should be a top priority.</li>
+          </ol>
+        </div>
+      </div>
+      <div id="empower" class="div-section">
+        <div class="container-narrow">
+          <h3>Final thoughts</h3>
+          <p>I found it to be such an eye-opening experience to be able to talk to real people living with Type 1 diabetes, and try to understand what they go through day-to-day. <mark>Learning about T1D through literature simply does not compare to learning from very human stories</mark>—something that should be considered in ALL design processes.</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- More Projects -->
+  <section class="div-section" id="more-projects">
+    <div class="container">
+      <h3>Check out another project:</h3>
+      <br>
+      <div class="row">
+            <div class="col-sm">
+              <a class="portfolio-card" href="myuhn.html">
+                <div class="card">
+                  <div class="hover-div rounded">
+                    <img class="card-img" src="img/thumbnail/myuhn.jpg" alt="myuhn">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title font-weight-normal">myUHN</h3>
+                    <p class="card-text">Enabling access to personal health information for a better patient experience</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm">
+              <a class="portfolio-card" href="voluntree.html">
+                <div class="card">
+                  <div class="hover-div rounded">
+                    <img class="card-img" src="img/thumbnail/voluntree.jpg" alt="voluntree">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title font-weight-normal">Voluntree</h3>
+                    <p class="card-text">A social platform that motivates people to volunteer in their communities</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm">
+              <a class="portfolio-card" href="fridgit.html">
+                <div class="card">
+                  <div class="hover-div rounded">
+                    <img class="card-img" src="img/thumbnail/fridgit.jpg" alt="fridgit">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title font-weight-normal">Fridgit</h3>
+                    <p class="card-text">A smart inventory tracking device that changes the way you manage food in your fridge</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+      <div class="text-right" id="other-cool-things"><a href="index.html#other-work"><h3>👉&nbsp;Other Cool Things I've Done</h3></a></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light" id="footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="mailto:lauren.ip@outlook.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://linkedin.com/in/lauren-ip" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+          <span class="copyright">Designed & coded with ❤️ &copy; Lauren Ip 2020</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/typed.js/typed.min.js"></script>
+  <script src="vendor/zoom-vanilla/zoom-vanilla.min.js"></script>
+  <script src="vendor/progress-sidebar/progress-sidebar.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

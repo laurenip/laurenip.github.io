@@ -2,22 +2,24 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Lauren Ip</title>
+  <title>Voluntree</title>
 
-  <!-- Bootstrap core CSS -->
+  <!-- Template Fonts -->
+  <link href="http://fontlibrary.org/face/hk-grotesk" rel="stylesheet" media="screen" type="text/css"/>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/08b9ba6fd9.js" crossorigin="anonymous"></script>
+
+  <!-- Vendor CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/zoom-vanilla/zoom.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/agency.css" rel="stylesheet">
 
 </head>
 
@@ -25,275 +27,448 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html">LAUREN IP</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fa fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Lauren Ip - Resume.pdf" target="_blank">Resume</a>
-          </li>
-          <!--
-          <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-      -->
-    </ul>
-  </div>
-</div>
-</nav>
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">LAUREN IP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu&nbsp;
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html#portfolio">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Lauren Ip - Resume.pdf" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<!-- Header -->
-<header class="masthead">
-  <div class="container-narrow">
-    <div class="intro-text">
-      <div class="project-title">Voluntree &mdash;</div>
-      <div class="project-tagline">a social volunteering platform</div>
-      <div class="project-tags">UX research &ensp;/&ensp; product design &ensp;/&ensp; usability testing</div>
+  <nav class="toc">
+  	<ul>
+  		<li><a href="#overview">Overview</a></li>
+        <ul>
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#solution">Solution</a></li>
+  			</ul>
+  		<li><a href="#research">I. Research</a></li>
+  			<ul>
+          <li><a href="#competitors">Competitive Analysis</a></li>
+          <li><a href="#users">User Research</a></li>
+          <li><a href="#persona">Personas</a></li>
+          <li><a href="#feature-scoping">Feature Scoping</a></li>
+          <li><a href="#use-cases">Use Cases</a></li>
+  			</ul>
+      <li><a href="#design">II. Design</a></li>
+        <ul>
+          <li><a href="#lofi">Low Fidelity</a></li>
+          <li><a href="#hifi">High Fidelity</a></li>
+        </ul>
+      <li><a href="#evaluation">III. Evaluation</a></li>
+        <ul>
+          <li><a href="#results">Analyzing Results</a></li>
+          <li><a href="#sus">System Usability Scale</a></li>
+        </ul>
+      <li><a href="#iteration">IV. Iteration</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+  	</ul>
+    <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+      <path stroke="#5746EC" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="miter" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+    </svg>
+  </nav>
 
+  <!-- Header -->
+  <header>
+    <div class="container-narrow">
+      <div class="project-header">
+        <h1>Voluntree</h1>
+        <h4>A social platform that motivates people to volunteer in their communities</h4>
+      </div>
     </div>
-  </div>
-</header>
-
-<div class="container-narrow">
-  <p style="padding-bottom:60px">Voluntree is a social volunteering platform that motivates people to volunteer through inter-community challenges, giving users a fun way to track their contributions, support social causes, and share their experiences with friends and family.</p>
-</div>
-<img class="hero-img" src="img/portfolio/voluntree/overview.jpg" alt="overview">
-<div class="container-narrow">
-  <h1 class="section-heading">THE CHALLENGE</h1>
-  <h1 class="section-title">Motivating the individual to volunteer</h1>
-  <p>In a survey done by Statistics Canada (2012), it was found that the greatest barrier to volunteering was lack of time and availability. Instead of trying to remove this rather superficial barrier, however, Voluntree focuses on addressing the deeper-rooted problem: a lack of <em>intrinsic</em> (or <em>self</em>) motivation.</p>
-  <p>What does this mean? Essentially, the goal of Voluntree is to give people enough motivation that they can eventually overcome superficial barriers--like time, effort, and availability--on their own. Voluntree uses techniques such as gamification and normification to not only capture, but also <em>retain</em> interest in volunteering.</p>
-  <img class="img-fluid img-in-body" src="img/portfolio/voluntree/game-norm.jpg" alt="gamification + normification">
-  <p>Voluntree attempts to enhance the experience of volunteering by introducing friendly competition amongst <em>whole communities</em> rather than just individuals. This way, the incentive to volunteer is not based on receiving material rewards, but rather the satisfaction of communal achievement. With the theme “social good” in mind, this mobile application aims to promote the idea of giving back to society through collective volunteerism and collaborative effort.</p>
-  <h1 class="section-heading">MY ROLE</h1>
-  <h1 class="section-title">Design lead</h1>
-  <p style="padding-bottom:60px">Although I was heavily involved in all stages of the project--from inception to finished product--I took the greatest lead in the design portion of the mobile app. I was responsible for translating our initial sketches into low-fidelity wireframes, developing the high-fidelity prototype, and implementing design changes post-usability test.</p>
-</div>
-
-<img class="hero-img" src="img/portfolio/voluntree/approach.jpg" alt="approach">
-
-<div class="container-narrow">
-  <h1 class="section-heading">THE APPROACH</h1>
-  <h1 class="section-title">Design grounded in research and driven by data</h1>
-  <h1 class="section-subtitle">Understanding the Science</h1>
-  <p>Before jumping into the solution stage, we did some digging into the problems that communities face with regards to volunteer participation. We looked into the factors that motivate people to volunteer and delved deep into the science behind gamification and normification, two concepts that form the foundation of our mobile application.</p>
-  <p>We garnered some key insights from a quick literature review:</p>
-  <ul>
-    <li>Younger Canadians, ages 15-34, had one of the highest volunteering rates among age groups but the lowest average annual hours in the same period--suggesting that people are not motivated enough to invest a significant amount of time or make long-term commitments.</li>
-    <li>Volunteerism can be described using a motivational framework comprised of six functions:
-      <ol style="padding-top:10px">
-        <li>Values--the ability to express selflessness</li>
-        <li>Understanding--the learning and use of knowledge and skills.</li>
-        <li>Social Interaction--interaction and engagement with other volunteers.</li>
-        <li>Career--benefits that may help an individual’s career.</li>
-        <li>Protection--the protection of ego, by reducing guilt over having socioeconomic advantages over the less fortunate.</li>
-        <li>Enhancement--the development of personal growth.</li>
-      </ol>
-    </li>
-    <li>While gamification elements (e.g. badges, points, rewards) can increase short-term motivation within individuals, normification (e.g. social pressures) is much more effective at sustaining long-term engagement.</li>
-  </ul>
-  <h1 class="section-subtitle">Understanding Our Competitors</h1>
-  <p>Through competitive benchmarking and market research, we were able to scope out what other similar volunteering platforms were offering.</p>
-  <img class="img-fluid img-in-body" src="img/portfolio/voluntree/competitors.jpg" alt="competitors">
-  <p>While most of these apps focus on eliminating barriers, Voluntree approaches volunteering from a different angle--looking at what makes people want to volunteer in the first place. The idea was that Voluntree could work alongside these other matchmaking apps rather than compete directly against them.</p>
-  <h1 class="section-subtitle">Understanding Our Users</h1>
-  <p>We put out a questionnaire to gauge the types of users that would be potentially interested in using the app, as well as understand their interests, values and motivations behind volunteering. We received 120 responses with 70% of respondents being between 17-35 years old, and 60% of respondents being post-secondary students.</p>
-  <img class="img-fluid img-in-body" src="img/portfolio/voluntree/survey.jpg" alt="pie graph">
-  <p>Key Insights:</p>
-  <ul>
-    <li>The most common sources of motivation for volunteering were 1) to give back to the community, and 2) personal obligation.</li>
-    <li>More people would volunteer if they 1) had more time, 2) they knew more about available opportunities, and 3) their friends who were also volunteering.</li>
-    <li>While 98% of participants said they enjoy volunteering, only 25% volunteer more than once a month.</li>
-    <li>Volunteering is seen as being more important to the community rather than the individual.</li>
-    <li>Users are generally more motivated to volunteer when part of a smaller, more intimate community.</li>
-    <li>More users would prefer to contribute to a community ranking rather than an individual ranking on a leaderboard.</li>
-  </ul>
-  <h1 class="section-subtitle">Crafting Personas</h1>
-  <p style="padding-bottom:60px">We identified our users to be mostly students and young working adults, generally between the ages of 15-35, who are technology equipped and interested in volunteering. I created a few personas to represent the different goals and motivations of each user group.</p>
-</div>
-<img class="hero-img" src="img/portfolio/voluntree/personas.jpg" alt="personas">
-<div class="container-narrow">
-  <br>
-  <h1 class="section-subtitle">Feature Scoping</h1>
-  <p>Based on the questionnaire we had sent out to users, we were able to do some initial feature scoping and prioritization. Some of the features that users found to be most valuable, in order of importance, included:</p>
-  <ol>
-    <li>Event invites and reminders</li>
-    <li>Monthly challenges sponsored by companies and organizations</li>
-    <li>Ability to join a community</li>
-    <li>Ability to track individual volunteer hours and achievements</li>
-    <li>Ability to share experiences and opportunities with others</li>
-  </ol>
-  <p>Using this data, as well as taking into consideration our findings from competitive benchmarking, we whittled down the main tasks that would be supported by our app:</p>
-  <ul>
-    <li>Create an account and log in</li>
-    <li>Explore and join a community</li>
-    <li>Search for opportunity</li>
-    <li>Log a contribution</li>
-    <li>Share/post about experience</li>
-  </ul>
-  <h1 class="section-subtitle">Developing Use Cases & Scenarios</h1>
-  <p>For each main functionality within the application, I created a use case to show how users might interact with our system. Each use case was supported by a user scenario and a relevant requirements list. Below is an example of our two main use cases:</p>
-</div>
-  <img class="img-fluid img-in-body" src="img/portfolio/voluntree/use-cases.jpg" alt="use cases">
-<div class="container-narrow">
-  <p>From these use cases, we then finalized a set of requirements that would guide us throughout the design phase.</p>
-  <h1 class="section-subtitle">Low Fidelity Sketches & Wireframes</h1>
-  <p>Sketching, sketching...and more sketching! Many individual and group brainstorming sessions later, our team landed on two design alternatives, each of which had their own notable design features.</p>
-  <img class="img-fluid img-in-body" style="padding-top:25px" src="img/portfolio/voluntree/alt1.jpg" alt="alternative design 1">
-  <img class="img-fluid img-in-body" style="padding-top:25px" src="img/portfolio/voluntree/alt2.jpg" alt="alternative design 2">
-  <p>After discussing the advantages and disadvantages of each, we decided to move forward with the first alternative design. Based on our discussions, I made some quick improvements and turned the initial sketch into a set of low-fidelity wireframes in Axure RP.</p>
-  <img class="img-fluid img-in-body" src="img/portfolio/voluntree/lofi.jpg" alt="low fidelity wireframes">
-  <h1 class="section-subtitle">High-Fidelity Prototyping</h1>
-  <p style="padding-bottom:60px">Because of time constraints I went straight to high-fidelity prototyping, using my trusty pair of tools Sketch + InVision.</p>
-</div>
-<img class="hero-img" src="img/portfolio/voluntree/hifi.jpg" alt="hi-fi sketches">
-<div class="container-narrow">
-  <br>
-  <h1 class="section-subtitle">Usability Testing</h1>
-  <p>With the high-fidelity prototype complete, our next step was to do some usability testing. We used the DECIDE evaluation framework to prepare our usability protocol:</p>
-  <img class="img-fluid img-in-body" src="img/portfolio/voluntree/decide.jpg" alt="DECIDE framework">
-  <p>We tested 10 users between the ages of 15-30 from the Greater Toronto Area, all having a variety of volunteering experiences and interests. After a quick background survey, we asked participants to perform the following tasks using our high-fidelity prototype:</p>
-  <ol>
-    <li>Create a new account (sign up).</li>
-    <li>Log in.</li>
-    <li>View the first post on your News Feed.</li>
-    <li>Join the Tree Huggerz community.</li>
-    <li>View a community challenge.</li>
-    <li>Log a contribution for that challenge.</li>
-    <li>View your own profile.</li>
-    <li>Start a new post about your experience.</li>
-  </ol>
-  <p>Quantitative metrics such as <em>time to complete task</em> and <em>number of errors</em> were used to measure how easily our users could use the app. Because we wanted to focus on content, layout and navigation, micro-interactions were not explicitly tested.</p>
-  <p>Qualitative feedback was also collected during a debrief with participants shortly after they completed their tasks. At the end, users were also given an exit survey to allow for further questions and feedback about their experience during the testing session.</p>
-  <h1 class="section-heading">OUTCOME</h1>
-  <h1 class="section-title">Useful, usable, and desirable</h1>
-  <h1 class="section-subtitle">A Look at Our Results</h1>
-  <p>Based on the number of errors made per task as well as the average time spent per task, it seemed that users had the most difficulty completing Task 4 (Joining the Tree Huggerz community), followed by Task 5 (Viewing a community challenge).</p>
-  <img class="img-fluid img-in-body" src="img/portfolio/voluntree/mistakes.jpg" alt="graph: errors per task">
-  <img class="img-fluid img-in-body" src="img/portfolio/voluntree/time.jpg" alt="graph: time per task">
-  <p>When asked about this during debrief, participants explained that it was because they couldn’t understand the difference between the “explore” and “communities” pages. It was unclear what content could be found under which tab; users expected to be able to join a community through the “communities” page, though this page was initially intended to show communities that users have already joined. Users also found it difficult to find and access challenges within a community group, as they were located too deep within the navigational hierarchy.</p>
-  <p>Other than these two points of frustration, most participants stated that they enjoyed the app, that it was aesthetically pleasing, and that they could see themselves using it in real life. Users especially enjoyed the social and gamification aspects of the platform, and thought the concept of communities was well integrated. Many appreciated how the app felt familiar and comfortable to use because of its similarities to other social media apps.</p>
-  <p>Some notable comments include:</p>
-  <ul>
-    <li>“The layout is quite nice. I like that the first thing I see is my news feed with opportunities. I also like how it integrates with my other social media accounts, like Facebook and Instagram.”</li>
-    <li>“Having the bottom tab bar made it pretty easy to navigate, but sometimes the label [for a page or button] wasn’t obvious. For example, I expected to be able to search for communities in the communities tab rather than the explore tab. I also didn't realize challenges would be within a specific community--I thought it would be where the leaderboard was.”</li>
-    <li>“Nice aesthetics. Clear and visible, not cluttered with functions. It’s very pretty and that makes me happy!”</li>
-  </ul>
-  <p>At the end of the usability test, participants were also given a system usability scale (SUS) to complete. The average system usability score across all ten participants was 77--a decent number that puts Voluntree at an above-average SUS ranking.</p>
-  <img class="img-fluid img-in-body" src="img/portfolio/voluntree/sus.jpg" alt="SUS ranking">
-  <p>So while we were confident that users found Voluntree useful, usable and desirable, there was clearly still room for improvement.</p>
-  <h1 class="section-subtitle">Recommendations for the Future</h1>
-  <p style="padding-bottom:60px">After reviewing the results of our usability test, we were able to categorize the usability issues we came across into three levels of importance: <em>critical, moderate,</em> and <em>minor</em>. To address these issues, I mocked up several design recommendations that could be implemented in future iterations of the product.</p>
-</div>
-<img class="hero-img" src="img/portfolio/voluntree/recs.jpg" alt="recommendations">
-<br><br><br>
-
-<!-- Portfolio Grid -->
-<section class="bg-light" id="portfolio">
-  <br><br><br>
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" href="voluntree.html">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/thumbnail/voluntree.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <div class="portfolio-caption-title">Voluntree &mdash;</div>
-            <div class="portfolio-caption-tagline">a social volunteering platform</div>
-            <div class="portfolio-caption-tags">UX research &ensp;/&ensp; product design &ensp;/&ensp; usability testing</div>
-          </div>
-        </div>
+      <img class="img-fluid rounded" src="img/portfolio/voluntree/header.jpg" alt="voluntree">
+    </div>
+  </header>
 
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" href="fridgit.html">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+  <section id="overview">
+    <div class="div-section">
+      <div class="container-narrow">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="col-pad-right">
+              <h2>Overview</h2>
+              <p>Back in 2017 I took a human factors interface design course where we were challenged to design a mobile application under the theme "social good". My team and I, all very actively involved students, thought it would be great to do something that encouraged active participation in the community.</p>
+              <p>We came up with Voluntree, a social volunteering platform that motivates people to volunteer through gamification and social sharing. Inter-community challenges give users a fun way to track their contributions, support social causes, and share their experiences with friends and family.</p>
             </div>
-            <img class="img-fluid" src="img/thumbnail/fridgit.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <div class="portfolio-caption-title">Fridgit &mdash;</div>
-            <div class="portfolio-caption-tagline">a smart inventory tracking device</div>
-            <div class="portfolio-caption-tags">product design &ensp;/&ensp; web design &ensp;/&ensp; brand development</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="col-pad-left">
+              <br>
+              <h3>Role</h3>
+              <p>Product Designer</p>
+              <h3>Timeline</h3>
+              <p>Sept 2017 - Dec 2017</p>
+              <h3>Tools</h3>
+              <p>Sketch, Axure RP, InVision</p>
+              <h3>Team</h3>
+              <p>Ryan Cheng, Meggie Debnath, Smiriti Shankar, Lauren Ip (Me!)</p>
+          </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" href="spotify.html">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/thumbnail/spotify.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <div class="portfolio-caption-title">Redesigning Spotify &mdash;</div>
-            <div class="portfolio-caption-tagline">a usability case study</div>
-            <div class="portfolio-caption-tags">task analysis &ensp;/&ensp; wireframing &ensp;/&ensp; usability testing</div>
+      </div>
+    </div>
+
+    <div id="problem" class="div-section">
+      <div class="container-narrow">
+        <h5>THE PROBLEM</h5>
+        <h3>People lack the self-motivation to volunteer.</h3>
+        <p>In a survey done by Statistics Canada (2010), it was shown that <mark>less than half of the Canadian population over the age of 15 did volunteer work,</mark> and that most of the work was actually done by a small proportion of volunteers.</p>
+        <p>For the majority of young adults, <mark>the greatest barrier to volunteering regularly is a lack of time and availability.</mark> But in a world where there is never really enough "time", and people seem to be constantly busy no matter what they do, it all comes down to prioritization. Without that innate drive to do good in the community, volunteering is not often top of mind for many young adults.</p>
+      </div>
+    </div>
+    <div id="hmw" class="div-section bg-light">
+      <div class="container-narrow">
+        <h2><span class="font-purple">How might we</span> motivate young adults to volunteer more in their community?</h2>
+      </div>
+    </div>
+    <div id="solution" class="div-section">
+      <div class="container-narrow">
+        <h5>THE SOLUTION</h5>
+        <h3>Motivate individuals using social factors.</h3>
+        <p>Voluntree was created to address the problem of self-motivation amongst less active members in the community. It aims to motivate people enough such that they can overcome superficial barriers—like time, effort, and availability—on their own. <mark>Voluntree uses techniques such as gamification and normification</mark> to not only capture, but also retain interest in volunteering.</p>
+        <img class="img-fluid img-in-body" src="img/portfolio/voluntree/game-norm.jpg" data-action="zoom" alt="gamification + normification">
+        <p>Voluntree attempts to enhance the experience of volunteering by <mark>introducing friendly competition amongst whole communities</mark> rather than just individuals. This way, the incentive to volunteer is not based on receiving material rewards, but rather the satisfaction of communal achievement. With the theme “social good” in mind, this mobile application aims to promote the idea of giving back to society through collective volunteerism and collaborative effort.</p>
+        <img class="img-fluid img-in-body" src="img/portfolio/voluntree/final1.png" data-action="zoom" alt="final design">
+        <img class="img-fluid img-in-body" src="img/portfolio/voluntree/final2.png" data-action="zoom" alt="final design">
+        <img class="img-fluid img-pad-top" src="img/portfolio/voluntree/final3.png" data-action="zoom" alt="final design">
+      </div>
+    </div>
+    <div id="contribution" class="div-section bg-light">
+      <div class="container-narrow">
+        <h3>My contribution</h3>
+        <p>I was heavily involved in all stages of the project–from inception to finished product–but took the greatest lead in the design portion of the mobile app. I was responsible for translating our initial sketches into low-fidelity wireframes, developing the high-fidelity prototype, and implementing design changes post-usability test.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="div-section">
+      <div class="container-narrow">
+        <h2>I. Research</h2>
+        <h3>Understanding the science</h3>
+        <p>We first did a <mark>quick literature review</mark> to look into the problems that communities face with regards to volunteer participation. We also looked into the factors that motivate people to volunteer, including the science behind gamification and normification. We found that:</p>
+        <ul>
+          <li>Younger Canadians, ages 15-34, had one of the highest volunteering rates among age groups but the lowest average annual hours in the same period–suggesting that <mark>young people are not motivated enough to make long-term commitments.</mark></li>
+          <li>Volunteerism can be described using a motivational framework comprised of six functions:
+            <ol>
+              <li><mark><em>Values</em></mark>—the ability to express selflessness.</li>
+              <li><mark><em>Understanding</em></mark>—the learning and use of knowledge and skills.</li>
+              <li><mark><em>Social Interaction</em></mark>—interaction and engagement with other volunteers.</li>
+              <li><mark><em>Career</em></mark>—benefits that may help an individual’s career.</li>
+              <li><mark><em>Protection</em></mark>—the protection of ego, by reducing guilt over having socioeconomic advantages over the less fortunate.</li>
+              <li><mark><em>Enhancement</em></mark>—the development of personal growth.</li>
+            </ol>
+          </li>
+          <li>While gamification elements (e.g. badges, points, rewards) can increase short-term motivation within individuals, <mark>normification (e.g. social pressures) is much more effective at sustaining long-term engagement.</mark></li>
+        </ul>
+      </div>
+    </div>
+    <div id="competitors" class="div-section bg-light">
+          <div class="container-narrow">
+            <h3>Understanding our competitors</h3>
+            <p>Through competitive benchmarking and market research, we were able to scope out what other similar volunteering platforms were offering. While most of those apps focused on eliminating barriers, <mark>Voluntree looked at what makes people want to volunteer in the first place.</mark> The idea was that Voluntree could work alongside these other matchmaking apps rather than compete directly against them.</p>
+            <img class="img-fluid img-pad-top" src="img/portfolio/voluntree/competitors.png" data-action="zoom" alt="competitive analysis">
           </div>
+        </div>
+    <div id="users" class="div-section">
+      <div class="container-narrow">
+        <h3>Understanding our users</h3>
+        <p>We put out a questionnaire to gauge the types of users that would be potentially interested in using the app, as well as understand their interests, values and motivations behind volunteering. We received <mark>120 responses</mark> with 70% of respondents being between 17-35 years old, and 60% of respondents being post-secondary students.</p>
+        <img class="img-fluid img-in-body" src="img/portfolio/voluntree/survey.jpg" data-action="zoom" alt="survey results for age and occupation">
+        <p>Some key insights include:</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <p class="font-purple big-bold">1</p>
+              <p class="smaller">The most common sources of motivation for volunteering were 1) to give back to the community, and 2) personal obligation.</p>
+            </div>
+            <div class="col-sm">
+              <p class="font-purple big-bold">2</p>
+              <p class="smaller">More people would volunteer if they 1) had more time, 2) they knew more about available opportunities, and 3) their friends who were also volunteering.</p>
+            </div>
+            <div class="col-sm">
+              <p class="font-purple big-bold">3</p>
+              <p class="smaller">While 98% of participants said they enjoy volunteering, only 25% volunteer more than once a month.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <p class="font-purple big-bold">4</p>
+              <p class="smaller">Volunteering is seen as being more important to the community rather than the individual.</p>
+            </div>
+            <div class="col-sm">
+              <p class="font-purple big-bold">5</p>
+              <p class="smaller">Users are generally more motivated to volunteer when part of a smaller, more intimate community.</p>
+            </div>
+            <div class="col-sm">
+              <p class="font-purple big-bold">6</p>
+              <p class="smaller">More users would prefer to contribute to a community ranking rather than an individual ranking on a leaderboard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="persona" class="div-section bg-light">
+      <div class="container-narrow">
+        <h3>Crafting personas</h3>
+        <p>We identified our users to be <mark>mostly students and young working adults, generally between the ages of 15-35,</mark> who are technology equipped and interested in volunteering. I created a few personas to represent the different goals and motivations of each user group.</p>
+        <img class="img-fluid img-in-body" src="img/portfolio/voluntree/personas.png" data-action="zoom" alt="3 personas">
+      </div>
+    </div>
+    <div id="feature-scoping" class="div-section">
+      <div class="container-narrow">
+        <h3>Feature scoping</h3>
+        <p>Based on the questionnaire we had sent out to users, we were able to do some initial feature scoping and prioritization. Some of the features that users found to be most valuable, in order of importance, included:</p>
+        <ol>
+          <li><mark>Event invites and reminders</mark></li>
+          <li><mark>Monthly challenges sponsored by companies and organizations</mark></li>
+          <li><mark>Ability to join a community</mark></li>
+          <li><mark>Ability to track individual volunteer hours and achievements</mark></li>
+          <li><mark>Ability to share experiences and opportunities with others</mark></li>
+        </ol>
+        <p>Using this data, as well as taking into consideration our findings from competitive benchmarking, we whittled down the main tasks that would be supported by our app:</p>
+        <h3>
+          <span class="badge-fixed">Create an account and log in</span>
+          <span class="badge-fixed">Explore and join a community</span>
+          <span class="badge-fixed">Search for opportunity</span>
+          <span class="badge-fixed">Log a contribution</span>
+          <span class="badge-fixed">Share/post about experience</span>
+        </h3>
+      </div>
+    </div>
+    <div id="use-cases" class="div-section bg-light">
+      <div class="container-narrow">
+        <h3>Developing use cases & scenarios</h3>
+        <p>For each main functionality within the application, <mark>I created a use case</mark> to show how users might interact with our system. Each use case was supported by a <mark>user scenario and requirements list.</mark> Below is an example of our two main use cases:</p>
+        <img class="img-fluid img-in-body" src="img/portfolio/voluntree/use-cases.png" data-action="zoom" alt="example of use cases">
+        <p>From these use cases, we then finalized a set of requirements that would guide us throughout the design phase.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="design">
+    <div class="div-section">
+      <div id="lofi" class="container-narrow">
+        <h2>II. Design</h2>
+        <h3>Low-fidelity sketches & wireframes</h3>
+        <p>Sketching, sketching...and more sketching! Many individual and group brainstorming sessions later, our team landed on two design alternatives, each of which had their own advantages and disadvantages. We decided to move forward with the first alternative design, which I turned into a set of low-fidelity wireframes in Axure RP.</p>
+        <div id="carouselLofi" class="carousel slide crsl-in-body" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/portfolio/voluntree/alt1.jpg" alt="Alternative design 1" data-action="zoom">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/portfolio/voluntree/alt2.jpg" alt="Alternative design 2" data-action="zoom">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/portfolio/voluntree/lofi.jpg" alt="low fidelity prototype" data-action="zoom">
+            </div>
+            <a class="carousel-control-prev" href="#carouselLofi" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselLofi" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <ol class="carousel-indicators">
+            <li data-target="#carouselLofi" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselLofi" data-slide-to="1"></li>
+            <li data-target="#carouselLofi" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div id="hifi" class="div-section bg-light">
+      <div class="container-narrow">
+        <h3>High-fidelity prototyping</h3>
+        <p>Our high-fidelity mocks and prototype were created using Sketch + InVision. <a href="https://invis.io/WDU1OL6EU3M" target="_blank">Check out the live prototype here.</a></p>
+        <img class="img-fluid img-in-body" src="img/portfolio/voluntree/hifi.jpg" data-action="zoom" alt="high fidelity prototype">
+        <iframe width="438" height="930" src="https://invis.io/TVU1OL7JD8Z" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="evaluation">
+    <div class="div-section">
+      <div class="container-narrow">
+        <h2>III. Evaluation</h2>
+        <h3>Usability testing</h3>
+        <p>With the high-fidelity prototype complete, our next step was to do some usability testing. We tested <mark>10 users between the ages of 15-30 from the Greater Toronto Area,</mark> all having a variety of volunteering experiences and interests. Using the DECIDE evaluation framework to prepare our usability protocol, we had participants perform 8 key tasks using our prototype.</p>
+        <img class="img-fluid img-pad-top" src="img/portfolio/voluntree/decide.jpg" data-action="zoom" alt="decide evaluation framework">
+      </div>
+    </div>
+    <div id="results" class="div-section bg-light">
+      <div class="container-narrow">
+        <h3>Analyzing results</h3>
+        <p>Both quantitative and qualitative data were compiled and analyzed to pinpoint the strengths and the shortcomings of our mobile app. While there were a few task frustrations, <mark>most participants stated that they enjoyed the app, that it was aesthetically pleasing, and that they could see themselves using it in real life.</mark> Users especially enjoyed the social and gamification aspects of the platform, and thought the concept of communities was well integrated. Many appreciated how the app felt familiar and comfortable to use because of its similarities to other social media apps.</p>
+        <br><blockquote class="blockquote"><p>“The layout is quite nice. I like that the first thing I see is my news feed with opportunities. I also like how it integrates with my other social media accounts, like Facebook and Instagram.”</p></blockquote>
+        <br><blockquote class="blockquote"><p>“Nice aesthetics. Clear and visible, not cluttered with functions. It’s very pretty and that makes me happy!”</p></blockquote><br>
+        <p>Based on the number of errors made per task as well as the average time spent per task, it seemed that users had the most difficulty completing Task 4 (Joining the Tree Huggerz community), followed by Task 5 (Viewing a community challenge).</p>
+        <img class="img-fluid img-in-body" src="img/portfolio/voluntree/quant.jpg" data-action="zoom" alt="result graphs: Task vs. # Errors and Task vs. Average Time">
+        <p>When asked about this during debrief, participants explained that it was because they <mark>couldn’t understand the difference between the “explore” and “communities” pages.</mark> It was unclear what content could be found under which tab. Users also found it <mark>difficult to find and access challenges within a community group,</mark> as they were located too deep within the navigational hierarchy.</p>
+        <br><blockquote class="blockquote"><p>“Having the bottom tab bar made it pretty easy to navigate, but sometimes the label [for a page or button] wasn’t obvious. For example, I expected to be able to search for communities in the communities tab rather than the explore tab. I also didn't realize challenges would be within a specific community–I thought it would be where the leaderboard was.”</p></blockquote><br>
+      </div>
+    </div>
+    <div id="sus" class="div-section">
+      <div class="container-narrow">
+        <h3>System usability scale (SUS)</h3>
+        <p>At the end of the usability test, participants were also given a system usability scale (SUS) to complete. The <mark>average system usability score across all ten participants was 77</mark> out of 100–a number that puts Voluntree at an above-average SUS ranking. But while we were confident that users found Voluntree useful, usable and desirable, there was clearly still room for improvement.</p>
+        <img class="img-fluid img-pad-top" src="img/portfolio/voluntree/sus.jpg" data-action="zoom" alt="System usability score graph showing Voluntree at an above-average 77 out of 100">
+      </div>
+    </div>
+  </section>
+
+  <section id="iteration">
+    <div class="div-section bg-light">
+      <div class="container-narrow">
+        <h2>IV. Iteration</h2>
+        <p>After reviewing the results of our usability test, we were able to categorize the usability issues we came across into three levels of importance: critical, moderate, and minor. To address these issues, I mocked up several design recommendations that could be implemented in future iterations of the product.</p>
+        <div id="carouselIter" class="carousel slide crsl-in-body" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/portfolio/voluntree/recs1.png" alt="Making the to-do list the focal point of the app" data-action="zoom">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/portfolio/voluntree/recs2.png" alt="Adding notifications & trip sharing options" data-action="zoom">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/portfolio/voluntree/recs3.png" alt="Replacing the “Food” resource with “Notes” & “Documents”" data-action="zoom">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/portfolio/voluntree/recs4.png" alt="Removing purchase features to focus on supplies checklist" data-action="zoom">
+            </div>
+            <a class="carousel-control-prev" href="#carouselIter" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIter" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <ol class="carousel-indicators">
+            <li data-target="#carouselIter" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselIter" data-slide-to="1"></li>
+            <li data-target="#carouselIter" data-slide-to="2"></li>
+            <li data-target="#carouselIter" data-slide-to="3"></li>
+          </ol>
         </div>
       </div>
     </div>
   </section>
 
-<!-- Footer -->
-<footer class="bg-light">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-4">
+  <section id="outcome">
+    <div class="div-section">
+      <div class="container-narrow">
+          <h2>Outcome</h2>
+          <p>On behalf of my team, <mark>I presented Voluntree at a Human Computer Interaction showcase</mark> hosted by the University of Toronto's Faculty of Information (iSchool). The event featured design work from a variety of students, and was attended by a mix of students, university professors, and industry professionals. <mark>Voluntree was one of only 2 undergraduate projects chosen to be presented amongst other graduate level projects.</mark> Our project garnered much interest as something that was unique, fun, and socially responsible, and was overall well-received by our audience.</p>
+        </div>
+      </div>
+  </section>
 
-        <ul class="list-inline social-buttons">
-          <li class="list-inline-item">
-            <a href="mailto:lauren.ip@outlook.com">
-              <i class="fa fa-envelope"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://linkedin.com/in/lauren-ip" target="_blank">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.behance.net/laurenipd0c9" target="_blank">
-              <i class="fa fa-behance"></i>
-            </a>
-          </li>
-        </ul>
+  <!-- More Projects -->
+  <section class="div-section" id="more-projects">
+    <div class="container">
+      <h3>Check out another project:</h3>
+      <br>
+      <div class="row">
+            <div class="col-sm">
+              <a class="portfolio-card" href="journeyon.html">
+                <div class="card">
+                  <div class="hover-div rounded">
+                    <img class="card-img" src="img/thumbnail/journeyon.jpg" alt="journeyon">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title font-weight-normal">JourneyOn</h3>
+                    <p class="card-text">Empowering people with Type 1 Diabetes to travel with confidence</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm">
+              <a class="portfolio-card" href="myuhn.html">
+                <div class="card">
+                  <div class="hover-div rounded">
+                    <img class="card-img" src="img/thumbnail/myuhn.jpg" alt="myuhn">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title font-weight-normal">myUHN</h3>
+                    <p class="card-text">Enabling access to personal health information for a better patient experience</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm">
+              <a class="portfolio-card" href="fridgit.html">
+                <div class="card">
+                  <div class="hover-div rounded">
+                    <img class="card-img" src="img/thumbnail/fridgit.jpg" alt="fridgit">
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title font-weight-normal">Fridgit</h3>
+                    <p class="card-text">A smart inventory tracking device that changes the way you manage food in your fridge</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+      <div class="text-right" id="other-cool-things"><a href="index.html#other-work"><h3>👉&nbsp;Other Cool Things I've Done</h3></a></div>
+    </div>
+  </section>
 
-        <span class="copyright">Designed & coded with love &copy; Lauren Ip 2018</span>
+  <!-- Footer -->
+  <footer class="bg-light" id="footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="mailto:lauren.ip@outlook.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://linkedin.com/in/lauren-ip" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+          <span class="copyright">Designed & coded with ❤️ &copy; Lauren Ip 2020</span>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/popper/popper.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/typed.js/typed.min.js"></script>
+  <script src="vendor/zoom-vanilla/zoom-vanilla.min.js"></script>
+  <script src="vendor/progress-sidebar/progress-sidebar.js"></script>
 
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Contact form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/agency.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="js/main.min.js"></script>
 
 </body>
 
