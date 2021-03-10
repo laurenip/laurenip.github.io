@@ -13,7 +13,7 @@ body {
 
 p, ul, ol {
   font-family: 'HKGroteskRegular', Helvetica, Arial, sans-serif;
-  font-weight:300;
+  font-weight: 400;
   line-height: 1.7;
   font-size: 18px;
   letter-spacing: 0.01rem;
@@ -272,7 +272,7 @@ header.masthead {
       padding-right: 23%;
       font-size: 24px;
       font-family: 'HKGroteskRegular', Helvetica, Arial, sans-serif;
-      font-weight: 300;
+      font-weight: 400;
       letter-spacing: 0.03rem;
       line-height: 160%;
       padding-top: 10px;
@@ -291,7 +291,7 @@ header.masthead {
     header.masthead .intro-text .intro-lead-in {
       font-size: 20px;
       font-family: 'HKGroteskRegular', Helvetica, Arial, sans-serif;
-      font-weight: 300;
+      font-weight: 400;
       letter-spacing: 0.03rem;
       line-height: 160%;
       padding-top: 10px; }
@@ -367,7 +367,7 @@ footer {
     color: grey;
     text-transform: none;
     font-family: 'HKGroteskRegular', Helvetica, Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: none; }
   footer ul.quicklinks {
     font-size: 90%;
@@ -375,7 +375,7 @@ footer {
     margin-bottom: 0;
     text-transform: none;
     font-family: 'HKGroteskRegular', Helvetica, Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase; }
 
 ul.social-buttons {
@@ -406,7 +406,7 @@ ul.social-buttons {
   border-color: #5746EC;
   background-color: #5746EC;
   font-family: 'HKGroteskRegular', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase; }
   .btn-primary.focus, .btn-primary:focus {
     color: white;
@@ -451,7 +451,7 @@ ul.social-buttons {
   border-color: #3b2e91;
   background-color: #3b2e91;
   font-family: 'HKGroteskRegular', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none; }
   .btn-xl.focus, .btn-xl:focus {
     color: white;
@@ -497,7 +497,7 @@ ul.social-buttons {
   margin: 0.3em 0.1em;
   font-size: 16px;
   font-family: 'HKGroteskRegular', Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.03rem;
   line-height: 1;
   color: #222222;
