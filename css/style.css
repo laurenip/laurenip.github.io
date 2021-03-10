@@ -6,13 +6,13 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'HKGroteskRegular', 'Assistant', Helvetica, Arial, sans-serif;
+  font-family: 'HKGroteskRegular', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
   color: #222222;
   background-color: white;
   -webkit-tap-highlight-color: #5746EC; }
 
 p, ul, ol {
-  font-family: 'HKGroteskRegular', 'Assistant', Helvetica, Arial, sans-serif;
+  font-family: 'HKGroteskRegular', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.7;
   font-size: 18px;
@@ -65,14 +65,14 @@ a {
 
 h1 {
   font-size: 48px;
-  font-family: 'HKGroteskBold', 'Assistant', Helvetica, Arial, sans-serif;
+  font-family: 'HKGroteskBold', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 h2 {
   font-size: 36px;
-  font-family: 'HKGroteskSemiBold', 'Assistant', Helvetica, Arial, sans-serif;
+  font-family: 'HKGroteskSemiBold', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
   font-weight: 600;
   letter-spacing: 0.03rem;
   line-height: 1.3; }
@@ -88,7 +88,7 @@ h2:after {
 
 h3 {
   font-size: 21px;
-  font-family: 'HKGroteskSemiBold', 'Assistant', Helvetica, Arial, sans-serif;
+  font-family: 'HKGroteskSemiBold', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
   font-weight: 600;
   margin-bottom: 8px;
   line-height:1.5;
@@ -101,7 +101,7 @@ h4 {
 }
 h5 {
   font-size: 14px;
-  font-family: 'HKGroteskMedium', 'Assistant', Helvetica, Arial, sans-serif;
+  font-family: 'HKGroteskMedium', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #868e96;
@@ -121,13 +121,13 @@ h6 {
 
 .big-bold {
   font-size: 28px;
-  font-family: 'HKGroteskBold', 'Assistant', Helvetica, Arial, sans-serif;
+  font-family: 'HKGroteskBold', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
   font-weight: 600;
   margin-bottom: 0px;
 }
 
 strong {
-  font-family: 'HKGroteskSemiBold', 'Assistant', Helvetica, Arial, sans-serif;
+  font-family: 'HKGroteskSemiBold', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
 
@@ -174,7 +174,7 @@ img::-moz-selection {
       text-decoration: none;
       transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000); }
   .toc li.visible>a {
-      font-family: 'HKGroteskMedium', 'Assistant', Helvetica, Arial, sans-serif;
+      font-family: 'HKGroteskMedium', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
       color: #5746EC;
       transform: translate( 5px ); }
   @media (max-width: 768px) {
@@ -263,15 +263,15 @@ header.masthead {
     padding: 230px 5% 50px 5%; }
     header.masthead .intro-text .intro-heading {
       font-size: 60px;
-      font-family: 'HKGroteskBold', 'Assistant', Helvetica, Arial, sans-serif;
-      font-weight: 600;
+      font-family: 'HKGroteskBold', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
+      font-weight: 700;
       line-height: 115%;
       margin-bottom: 10px;
       letter-spacing: 0.01rem; }
     header.masthead .intro-text .intro-lead-in {
       padding-right: 23%;
       font-size: 24px;
-      font-family: 'HKGroteskRegular', 'Assistant', Helvetica, Arial, sans-serif;
+      font-family: 'HKGroteskRegular', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
       font-weight: 400;
       letter-spacing: 0.03rem;
       line-height: 160%;
@@ -283,14 +283,14 @@ header.masthead {
     padding: 150px 5% 10px 5%; }
     header.masthead .intro-text .intro-heading {
       font-size: 44px;
-      font-family: 'HKGroteskBold', 'Assistant', Helvetica, Arial, sans-serif;
-      font-weight: 600;
+      font-family: 'HKGroteskBold', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
+      font-weight: 700;
       line-height: 115%;
       margin-bottom: 10px;
       letter-spacing: 0.01rem; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 20px;
-      font-family: 'HKGroteskRegular', 'Assistant', Helvetica, Arial, sans-serif;
+      font-family: 'HKGroteskRegular', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
       font-weight: 400;
       letter-spacing: 0.03rem;
       line-height: 160%;
@@ -365,7 +365,7 @@ footer {
     font-size: 90%;
     color: grey;
     text-transform: none;
-    font-family: 'HKGroteskRegular', 'Assistant', Helvetica, Arial, sans-serif;
+    font-family: 'HKGroteskRegular', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
     font-weight: 400;
     text-transform: none; }
   footer ul.quicklinks {
@@ -373,7 +373,7 @@ footer {
     line-height: 40px;
     margin-bottom: 0;
     text-transform: none;
-    font-family: 'HKGroteskRegular', 'Assistant', Helvetica, Arial, sans-serif;
+    font-family: 'HKGroteskRegular', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
     font-weight: 400;
     text-transform: uppercase; }
 
@@ -404,7 +404,7 @@ ul.social-buttons {
   color: white;
   border-color: #5746EC;
   background-color: #5746EC;
-  font-family: 'HKGroteskRegular', 'Assistant', Helvetica, Arial, sans-serif;
+  font-family: 'HKGroteskRegular', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase; }
   .btn-primary.focus, .btn-primary:focus {
@@ -449,7 +449,7 @@ ul.social-buttons {
   color: white;
   border-color: #3b2e91;
   background-color: #3b2e91;
-  font-family: 'HKGroteskRegular', 'Assistant', Helvetica, Arial, sans-serif;
+  font-family: 'HKGroteskRegular', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-transform: none; }
   .btn-xl.focus, .btn-xl:focus {
@@ -495,7 +495,7 @@ ul.social-buttons {
   padding: 0.6em 0.9em;
   margin: 0.3em 0.1em;
   font-size: 16px;
-  font-family: 'HKGroteskRegular', 'Assistant', Helvetica, Arial, sans-serif;
+  font-family: 'HKGroteskRegular', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 0.03rem;
   line-height: 1;
