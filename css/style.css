@@ -297,6 +297,24 @@ header.masthead {
       padding-top: 10px; }
 }
 
+.secondary-heading {
+  font-family: 'HKGroteskBold', 'Sarabun', 'Assistant', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  margin-bottom:-50px;
+  font-size: 42px;
+}
+
+.about-header {
+  padding: 180px 5% 50px 5%;
+}
+@media (max-width: 768px) {
+  .about-header {
+    padding: 130px 5% 10px 5%; }
+}
+
+.about-intro {
+  padding: 30px 5% 0 5%;
+}
 /*! ================== Project Section ================== */
 
 /*! Modified Cards (from Bootstrap) */
@@ -345,7 +363,11 @@ header.masthead {
   padding: 1.5rem 0.5rem;
 }
 
-.card-text {
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+.card-text-h2 {
   margin-top: -0.75rem;
 }
 
